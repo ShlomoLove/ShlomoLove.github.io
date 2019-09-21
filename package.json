@@ -1,0 +1,22 @@
+{
+  "name": "shlomolove.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio ",
+  "main": "index.js",
+  "homepage": "https://ShlomoLove.github.io",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShlomoLove/ShlomoLove.github.io.git"
+  },
+  "author": "Scott Nassau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShlomoLove/ShlomoLove.github.io/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
