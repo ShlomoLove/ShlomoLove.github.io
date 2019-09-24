@@ -15,14 +15,14 @@ body{
   display: flex;
   /* border: solid blue; */
   left: 50%;
-  margin-top: 5em;
+  margin-top: 10em;
   z-index: 1;
   justify-content: center;
 }
 .logo {
   position: absolute;
-  left: 4em;
-  top: 4em;
+  left: 2em;
+  top: 2em;
   width: 10em;
   height: 10em;
   z-index: -1;
@@ -36,22 +36,22 @@ body{
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
 .small{
-  left: 4em;
-  top: 4em;
+  left: 2em;
+  top: 2em;
   width: 10em;
   height: 10em;
   /* background: blue; */
 }
 .medium{
-  left: 2em;
-  top: 2em;
+  left: 0em;
+  top: 0em;
   width: 14em;
   height: 14em;
   /* background: green; */
 }
 .large{
-  left: 0em;
-  top: 0em;
+  left: -2em;
+  top: -2em;
   width: 18em;
   height: 18em;
   /* background: orange; */
@@ -59,15 +59,15 @@ body{
 .xlarge{
   width: 30em;
   height: 30em;
-  left: -6em;
-  top: -6em;
+  left: -8em;
+  top: -8em;
   /* background: purple;  */
 }
 .xxlarge{
   width: 50em;
   height: 50em;
-  left: -16em;
-  top: -16em;
+  left: -18em;
+  top: -18em;
   /* background: red;  */
 }
 .shade1{
