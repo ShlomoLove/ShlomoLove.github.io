@@ -1,4 +1,5 @@
 import React from 'react';
+import Background from './Background';
 import classNames from 'classnames';
 
 class App extends React.Component {
@@ -11,7 +12,10 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <div>WELCOME TO SCOTT NASSAU'S PAGE</div>
+        <Background/>
+        <div className='headerContainer'>
+          <div className='nassauTitle'>Scott P Nassau</div>
+        </div>
       </div>
     )
   }

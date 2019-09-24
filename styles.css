@@ -1,0 +1,104 @@
+body{
+  background: #272A43;
+}
+.nassauTitle{
+  /* text-transform: uppercase; */
+  left: 50%; 
+  font-size: 4em;
+  font-weight: 100;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #ff5050  0%,#ff9900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.headerContainer{
+  display: flex;
+  /* border: solid blue; */
+  left: 50%;
+  margin-top: 5em;
+  z-index: 1;
+  justify-content: center;
+}
+.logo {
+  position: absolute;
+  left: 4em;
+  top: 4em;
+  width: 10em;
+  height: 10em;
+  z-index: -1;
+}
+.circle{
+  position: absolute;
+  z-index: -2;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 20s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.small{
+  left: 4em;
+  top: 4em;
+  width: 10em;
+  height: 10em;
+  /* background: blue; */
+}
+.medium{
+  left: 2em;
+  top: 2em;
+  width: 14em;
+  height: 14em;
+  /* background: green; */
+}
+.large{
+  left: 0em;
+  top: 0em;
+  width: 18em;
+  height: 18em;
+  /* background: orange; */
+}
+.xlarge{
+  width: 30em;
+  height: 30em;
+  left: -6em;
+  top: -6em;
+  /* background: purple;  */
+}
+.xxlarge{
+  width: 50em;
+  height: 50em;
+  left: -16em;
+  top: -16em;
+  /* background: red;  */
+}
+.shade1{
+  opacity: 0.1;
+}
+.shade2{
+  opacity: 0.2;
+}
+.shade3{
+  opacity: 0.4;
+}
+.shade4{
+  opacity: 0.6;
+}
+.shade5{
+  opacity: 0.8;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(.9);
+  }
+  
+  50%{
+    transform: scale(1.4);
+  }
+  
+  100%{
+    transform: scale(.9);
+  }
+}
+
+
+
