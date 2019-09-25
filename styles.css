@@ -1,6 +1,17 @@
 body{
   background: #272A43;
 }
+.toolbar{
+  background: linear-gradient(to right, #ff5050  0%,#ff9900 100%);
+}
+.mainApp{
+  display: flex;
+  /* border: solid green; */
+}
+.drawerContainer{
+  display: flex;
+  /* border: solid pink; */
+}
 .nassauTitle{
   /* text-transform: uppercase; */
   left: 50%; 
@@ -22,7 +33,7 @@ body{
 .logo {
   position: absolute;
   left: 2em;
-  top: 2em;
+  top: 6em;
   width: 10em;
   height: 10em;
   z-index: -1;
@@ -37,53 +48,43 @@ body{
 }
 .small{
   left: 2em;
-  top: 2em;
+  top: 6em;
   width: 10em;
   height: 10em;
+  opacity: 0.8;
   /* background: blue; */
 }
 .medium{
   left: 0em;
-  top: 0em;
+  top: 4em;
   width: 14em;
   height: 14em;
+  opacity: 0.6;
   /* background: green; */
 }
 .large{
   left: -2em;
-  top: -2em;
+  top: 2em;
   width: 18em;
   height: 18em;
+  opacity: 0.4;
   /* background: orange; */
 }
 .xlarge{
   width: 30em;
   height: 30em;
   left: -8em;
-  top: -8em;
+  top: -4em;
+  opacity: 0.2;
   /* background: purple;  */
 }
 .xxlarge{
   width: 50em;
   height: 50em;
   left: -18em;
-  top: -18em;
-  /* background: red;  */
-}
-.shade1{
+  top: -14em;
   opacity: 0.1;
-}
-.shade2{
-  opacity: 0.2;
-}
-.shade3{
-  opacity: 0.4;
-}
-.shade4{
-  opacity: 0.6;
-}
-.shade5{
-  opacity: 0.8;
+  /* background: red;  */
 }
 
 @keyframes ripple{

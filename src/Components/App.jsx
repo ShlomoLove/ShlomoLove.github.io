@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from './Background';
 import classNames from 'classnames';
+import PersistentDrawerRight from './TopDrawer'
 
 class App extends React.Component {
   constructor (props) {
@@ -12,9 +13,14 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <Background/>
-        <div className='headerContainer'>
-          <div className='nassauTitle'>Scott P Nassau</div>
+        <div className='drawerContainer'>
+          <PersistentDrawerRight/>
+        </div>
+        <div className='mainApp'>
+          <Background/>
+          <div className='headerContainer'>
+            <div className='nassauTitle'>Scott P Nassau</div>
+          </div>
         </div>
       </div>
     )
