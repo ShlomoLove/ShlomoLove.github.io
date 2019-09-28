@@ -7,7 +7,11 @@ class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-
+      home: true,
+      about: false,
+      articles: false,
+      apps: false,
+      resume: false,
     }
   }
   render () {
@@ -19,11 +23,11 @@ class App extends React.Component {
         <div className='mainApp'>
           <Background/>
           <div className='headerContainer'>
-            <div className='nassauTitle'>Hi, my name is Scott!</div>
-            <div className='nassauTitle'>Thank you for visiting my page.</div>
-            <div className='nassauTitle'>To find out more about me and navigate through this page click up here</div>
+            <span className='nassauTitle'>Hi, my name is Scott!</span>
+            <span className='nassauTitle'>Thank you for visiting my page.</span>
+            <span className='nassauTitle'>I am a software engineer, project manager and Scrum Master</span>
+            <span className='nassauTitle'>To find out more about me and navigate through this page click up here</span>
             <div className='nassauTitle'>&#10138;</div>
-
           </div>
         </div>
       </div>

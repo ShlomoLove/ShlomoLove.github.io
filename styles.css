@@ -1,17 +1,35 @@
 body{
   background: #272A43;
 }
+
+
+/**************** Top Drawer ********************/
+
 .toolbar{
   background: linear-gradient(to right, #ff5050  0%,#ff9900 100%);
 }
+
+/**************** App ********************/
+
 .mainApp{
   display: flex;
-  /* border: solid green; */
+  border: solid green;
 }
+
+.headerContainer{
+  display: flex;
+  border: solid blue;
+  left: 50%;
+  margin-top: 10em;
+  z-index: 1;
+  justify-content: center;
+}
+
 .drawerContainer{
   display: flex;
-  /* border: solid pink; */
+  border: solid pink;
 }
+
 .nassauTitle{
   /* text-transform: uppercase; */
   left: 50%; 
@@ -22,22 +40,9 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.headerContainer{
-  display: flex;
-  /* border: solid blue; */
-  left: 50%;
-  margin-top: 10em;
-  z-index: 1;
-  justify-content: center;
-}
-.logo {
-  position: absolute;
-  left: 2em;
-  top: 6em;
-  width: 10em;
-  height: 10em;
-  z-index: -1;
-}
+
+/**************** Background ********************/
+
 .circle{
   position: absolute;
   z-index: -2;
@@ -100,6 +105,18 @@ body{
     transform: scale(.9);
   }
 }
+
+/**************** Logo ********************/
+
+.logo {
+  position: absolute;
+  left: 2em;
+  top: 6em;
+  width: 10em;
+  height: 10em;
+  z-index: -1;
+}
+
 
 
 
