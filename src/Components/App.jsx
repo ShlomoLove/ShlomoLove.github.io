@@ -19,7 +19,11 @@ class App extends React.Component {
         <div className='mainApp'>
           <Background/>
           <div className='headerContainer'>
-            <div className='nassauTitle'>Scott P Nassau</div>
+            <div className='nassauTitle'>Hi, my name is Scott!</div>
+            <div className='nassauTitle'>Thank you for visiting my page.</div>
+            <div className='nassauTitle'>To find out more about me and navigate through this page click up here</div>
+            <div className='nassauTitle'>&#10138;</div>
+
           </div>
         </div>
       </div>
