@@ -18,6 +18,7 @@ body{
 
 .headerContainer{
   display: flex;
+  flex-direction: column;
   border: solid blue;
   left: 50%;
   margin-top: 10em;
