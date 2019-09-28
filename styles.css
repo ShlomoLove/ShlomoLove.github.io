@@ -13,13 +13,13 @@ body{
 
 .mainApp{
   display: flex;
-  border: solid green;
+  /* border: solid green; */
 }
 
 .headerContainer{
   display: flex;
   flex-direction: column;
-  border: solid blue;
+  /* border: solid blue; */
   left: 50%;
   margin-top: 10em;
   z-index: 1;
@@ -28,7 +28,7 @@ body{
 
 .drawerContainer{
   display: flex;
-  border: solid pink;
+  /* border: solid pink; */
 }
 
 .nassauTitle{
