@@ -1,5 +1,6 @@
 body{
   background: #272A43;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 
@@ -19,8 +20,8 @@ body{
 .headerContainer{
   display: flex;
   flex-direction: column;
+  text-align: center; 
   /* border: solid blue; */
-  left: 50%;
   margin-top: 10em;
   z-index: 1;
   justify-content: center;
@@ -33,11 +34,12 @@ body{
 
 .nassauTitle{
   /* text-transform: uppercase; */
-  left: 50%; 
-  font-size: 4em;
+  /* left: 50%;  */
+  font-size: 3em;
   font-weight: 100;
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ff5050  0%,#ff9900 100%);
+  justify-content: center;
+  /* font-family: sans-serif; */
+  background: linear-gradient(to right, white  80%,#ff9900 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

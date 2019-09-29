@@ -25,7 +25,7 @@ class App extends React.Component {
           <div className='headerContainer'>
             <span className='nassauTitle'>Hi, my name is Scott!</span>
             <span className='nassauTitle'>Thank you for visiting my page.</span>
-            <span className='nassauTitle'>I am a software engineer, project manager and Scrum Master</span>
+            <span className='nassauTitle'>I lead teams and build websites</span>
             <span className='nassauTitle'>To find out more about me and navigate through this page click up here</span>
             <div className='nassauTitle'>&#10138;</div>
           </div>
