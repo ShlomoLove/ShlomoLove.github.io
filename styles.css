@@ -16,7 +16,6 @@ body{
   padding: 0;
   display: flex;
   flex-direction: column; 
-  border: solid pink;
 }
 /**************** Arrow Container ********************/
 
@@ -25,7 +24,6 @@ body{
   height: 5em;
   display: flex;
   justify-content: flex-end; 
-  border: solid red;
 }
 
 .arrow {
@@ -34,7 +32,7 @@ body{
   height: 15px;
   border: .5px solid;
   align-items: flex-end;
-  border-color: white transparent transparent white;
+  border-color: #e82525 transparent transparent #ff5050;
   transform: rotate(45deg);
 }
 
@@ -80,22 +78,21 @@ body{
   font-size: 2em;
   color: white;
   text-align: right;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 /**************** App ********************/
 
 .mainApp{
   display: flex;
-  /* border: solid green; */
 }
 
 .headerContainer{
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: center; 
-  /* border: solid blue; */
-  margin-top: 10em;
+  margin-top: 7em;
   z-index: 1;
   justify-content: center;
 }
@@ -107,21 +104,18 @@ body{
   /* left: 50%;  */
   font-size: 3em;
   font-weight: 100;
-  justify-content: center;
+  text-align: center;
   /* font-family: sans-serif; */
-  background: linear-gradient(to right, white  80%,#ff9900 100%);
+  background: linear-gradient(to right, white  20%, #f8f7f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .frontCopy2{
-  /* text-transform: uppercase; */
-  /* left: 50%;  */
   font-size: 3em;
   font-weight: 100;
-  justify-content: center;
-  /* font-family: sans-serif; */
-  background: linear-gradient(to right, white  80%,#ff9900 100%);
+  text-align: center;
+  background: linear-gradient(to right, white  20%, #f8f7f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -133,7 +127,7 @@ body{
   font-weight: 100;
   justify-content: center;
   /* font-family: sans-serif; */
-  background: linear-gradient(to right, white  80%,#ff9900 100%);
+  background: linear-gradient(to right, white  20%, #f8f7f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -154,7 +148,6 @@ body{
   width: 10em;
   height: 10em;
   opacity: 0.8;
-  /* background: blue; */
 }
 .medium{
   left: 0em;
@@ -162,7 +155,6 @@ body{
   width: 14em;
   height: 14em;
   opacity: 0.6;
-  /* background: green; */
 }
 .large{
   left: -2em;
@@ -170,7 +162,6 @@ body{
   width: 18em;
   height: 18em;
   opacity: 0.4;
-  /* background: orange; */
 }
 .xlarge{
   width: 30em;
@@ -178,7 +169,6 @@ body{
   left: -8em;
   top: -4em;
   opacity: 0.2;
-  /* background: purple;  */
 }
 .xxlarge{
   width: 50em;
@@ -186,7 +176,6 @@ body{
   left: -18em;
   top: -14em;
   opacity: 0.1;
-  /* background: red;  */
 }
 
 @keyframes ripple{

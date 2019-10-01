@@ -14,6 +14,10 @@ class App extends React.Component {
       resume: false,
     }
   }
+
+  clickAbout = () => {
+    
+  }
   render () {
     return (
       <div>
@@ -34,9 +38,8 @@ class App extends React.Component {
             <div className={classnames('arrowSlider', 'delay3')}>
               <div className='arrow'></div>
             </div>
+          <div className='instructions'>To find out more, click here:</div>
           </div>
-          {/* <div className='instructions'>&#10138;</div> */}
-          <div className='instructions'>To find out more about me, click here:</div>
         </div>
         <div className='mainApp'>
           <Background/>
