@@ -1,6 +1,6 @@
 import React from 'react';
 import Background from './Background';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import PersistentDrawerRight from './TopDrawer'
 
 class App extends React.Component {
@@ -18,16 +18,34 @@ class App extends React.Component {
     return (
       <div>
         <div className='drawerContainer'>
-          <PersistentDrawerRight/>
+          <PersistentDrawerRight className='drawerContainer'/>
+        </div>
+        <div className='instructionsContainer'>
+          <div className='arrowContainer'>
+            <div className={classnames('arrowSlider')}>
+              <div className='arrow'></div>
+            </div>
+            <div className={classnames('arrowSlider', 'delay1')}>
+              <div className='arrow'></div>
+            </div>
+            <div className={classnames('arrowSlider', 'delay2')}>
+              <div className='arrow'></div>
+            </div>
+            <div className={classnames('arrowSlider', 'delay3')}>
+              <div className='arrow'></div>
+            </div>
+          </div>
+          {/* <div className='instructions'>&#10138;</div> */}
+          <div className='instructions'>To find out more about me, click here:</div>
         </div>
         <div className='mainApp'>
           <Background/>
           <div className='headerContainer'>
-            <span className='nassauTitle'>Hi, my name is Scott!</span>
-            <span className='nassauTitle'>Thank you for visiting my page.</span>
-            <span className='nassauTitle'>I lead teams and build websites</span>
-            <span className='nassauTitle'>To find out more about me and navigate through this page click up here</span>
-            <div className='nassauTitle'>&#10138;</div>
+            <span className='frontCopy1'>Hi, my name is Scott!</span>
+            <span className='frontCopy2'>Thank you for visiting my page.</span>
+            <span className='frontCopy3'>I lead teams</span>
+            <span className='frontCopy3'>&</span>
+            <span className='frontCopy3'>build websites</span>
           </div>
         </div>
       </div>

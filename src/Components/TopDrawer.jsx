@@ -54,13 +54,13 @@ const useStyles = makeStyles(theme => ({
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing(0, 1),
+    padding: theme.spacing(0, 0),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-start',
   },
   content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
+    flexGrow: 0,
+    padding: theme.spacing(0),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -149,7 +149,6 @@ export default function PersistentDrawerRight() {
             </ListItem>
           ))}
         </List>
-        <Divider />
       </Drawer>
     </div>
   );

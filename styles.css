@@ -7,7 +7,80 @@ body{
 /**************** Top Drawer ********************/
 
 .toolbar{
-  background: linear-gradient(to right, #ff5050  0%,#ff9900 100%);
+  background: linear-gradient(to right, #e82525  0%,#ff5050 70%);
+}
+
+.drawerContainer{
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  border: solid pink;
+}
+/**************** Arrow Container ********************/
+
+.arrowContainer {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: flex-end; 
+  border: solid red;
+}
+
+.arrow {
+  margin-right: 2em;
+  width: 15px;
+  height: 15px;
+  border: .5px solid;
+  align-items: flex-end;
+  border-color: white transparent transparent white;
+  transform: rotate(45deg);
+}
+
+.arrowSlider {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite; 
+          animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% { opacity:0; transform: translateY(3em); }  
+  20% { opacity:1; transform: translateY(1em); }   
+  80% { opacity:1; transform: translateY(-1em); }  
+  100% { opacity:0; transform: translateY(-3em); } 
+}
+@keyframes slide {
+  0% { opacity:0; transform: translateY(3em); }  
+  20% { opacity:1; transform: translateY(1em); }   
+  80% { opacity:1; transform: translateY(-1em); }  
+  100% { opacity:0; transform: translateY(-3em); }  
+}
+
+/**************** Instructions ********************/
+.instructionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructions {
+  font-size: 2em;
+  color: white;
+  text-align: right;
+  margin-right: 1em;
 }
 
 /**************** App ********************/
@@ -27,12 +100,33 @@ body{
   justify-content: center;
 }
 
-.drawerContainer{
-  display: flex;
-  /* border: solid pink; */
+
+
+.frontCopy1{
+  /* text-transform: uppercase; */
+  /* left: 50%;  */
+  font-size: 3em;
+  font-weight: 100;
+  justify-content: center;
+  /* font-family: sans-serif; */
+  background: linear-gradient(to right, white  80%,#ff9900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.nassauTitle{
+.frontCopy2{
+  /* text-transform: uppercase; */
+  /* left: 50%;  */
+  font-size: 3em;
+  font-weight: 100;
+  justify-content: center;
+  /* font-family: sans-serif; */
+  background: linear-gradient(to right, white  80%,#ff9900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.frontCopy3{
   /* text-transform: uppercase; */
   /* left: 50%;  */
   font-size: 3em;
@@ -51,7 +145,7 @@ body{
   z-index: -2;
   border-radius: 50%;
   background: white;
-  animation: ripple 20s infinite;
+  animation: ripple 13s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
 .small{
