@@ -1,7 +1,11 @@
 import React from 'react';
 import Background from './Background';
 import classnames from 'classnames';
-import PersistentDrawerRight from './TopDrawer'
+import PersistentDrawerRight from './TopDrawer';
+import Apps from './Pages/Apps';
+import About from './Pages/About';
+import Articles from './Pages/Articles';
+import Resume from './Pages/Resume';
 
 class App extends React.Component {
   constructor (props) {
@@ -13,16 +17,47 @@ class App extends React.Component {
       apps: false,
       resume: false,
     }
+    this.clickAbout = this.clickAbout.bind(this);
+    this.clickApps = this.clickApps.bind(this);
+    this.clickArticles = this.clickArticles.bind(this);
   }
 
-  clickAbout = () => {
-    
+  clickAbout () {
+    this.setState({
+      home: false,
+      about: true,
+      articles: false,
+      apps: false,
+      resume: false,
+    })
   }
+
+  clickArticles () {
+    this.setState({
+      home: false,
+      about: false,
+      articles: true,
+      apps: false,
+      resume: false,
+    })
+
+  }
+
+  clickApps () {
+    this.setState({
+      home: false,
+      about: true,
+      articles: false,
+      apps: false,
+      resume: false,
+    })
+  }
+
   render () {
     return (
       <div>
         <div className='drawerContainer'>
-          <PersistentDrawerRight className='drawerContainer'/>
+          <PersistentDrawerRight className='drawerContainer' clickAbout={this.clickAbout} clickArticles={this.clickArticles} clickApps={this.clickApps} />
         </div>
         <div className='instructionsContainer'>
           <div className='arrowContainer'>
