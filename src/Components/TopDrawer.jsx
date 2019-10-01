@@ -15,8 +15,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import InfoIcon from '@material-ui/icons/Info';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
+import CodeSharpIcon from '@material-ui/icons/CodeSharp';
+import DeveloperBoardSharpIcon from '@material-ui/icons/DeveloperBoardSharp';
+import ImportantDevicesSharpIcon from '@material-ui/icons/ImportantDevicesSharp';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import WebIcon from '@material-ui/icons/Web';
 
 const drawerWidth = 240;
 
@@ -76,7 +82,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function PersistentDrawerRight() {
+export default function PersistentDrawerRight(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -142,12 +148,19 @@ export default function PersistentDrawerRight() {
         </div>
         <Divider />
         <List>
-          {['Articles', 'Apps', 'About', 'Resume'].map((text, index) => (
-            <ListItem button key={text}>
-              {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
-              <ListItemText primary={text} />
+            <ListItem button key='About'>
+              <ListItemIcon> <AccountCircleIcon /> </ListItemIcon>
+              <ListItemText primary='About' />
             </ListItem>
-          ))}
+              <ListItem button key='Resume'>
+              <ListItemIcon> <BusinessCenterIcon /> </ListItemIcon>              <ListItemText primary='Resume' />
+            </ListItem>
+              <ListItem button key='Articles'>
+              <ListItemIcon> <CreateOutlinedIcon /> </ListItemIcon>              <ListItemText primary='Articles' />
+            </ListItem>
+              <ListItem button key='Projects'>
+              <ListItemIcon> <CodeSharpIcon /> </ListItemIcon>              <ListItemText primary='Projects' />
+            </ListItem>
         </List>
       </Drawer>
     </div>
