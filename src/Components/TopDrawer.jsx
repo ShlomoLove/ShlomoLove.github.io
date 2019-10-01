@@ -148,18 +148,18 @@ export default function PersistentDrawerRight(props) {
         </div>
         <Divider />
         <List>
-            <ListItem button key='About'>
+            <ListItem button key='About' onClick={(e)=>{props.clickAbout(); handleDrawerClose();}}>
               <ListItemIcon> <AccountCircleIcon /> </ListItemIcon>
               <ListItemText primary='About' />
             </ListItem>
-              <ListItem button key='Resume'>
-              <ListItemIcon> <BusinessCenterIcon /> </ListItemIcon>              <ListItemText primary='Resume' />
+            <ListItem button key='Resume'>
+              <ListItemIcon> <BusinessCenterIcon /> </ListItemIcon> <ListItemText primary='Resume' />
             </ListItem>
-              <ListItem button key='Articles'>
-              <ListItemIcon> <CreateOutlinedIcon /> </ListItemIcon>              <ListItemText primary='Articles' />
+            <ListItem button key='Articles'onClick={(e)=>{props.clickArticles(); handleDrawerClose();}}>
+              <ListItemIcon> <CreateOutlinedIcon /> </ListItemIcon> <ListItemText primary='Articles' />
             </ListItem>
-              <ListItem button key='Projects'>
-              <ListItemIcon> <CodeSharpIcon /> </ListItemIcon>              <ListItemText primary='Projects' />
+            <ListItem button key='Projects' onClick={(e)=>{props.clickApps(); handleDrawerClose();}}>
+              <ListItemIcon> <CodeSharpIcon /> </ListItemIcon> <ListItemText primary='Projects' />
             </ListItem>
         </List>
       </Drawer>
