@@ -23,6 +23,8 @@ import DeveloperBoardSharpIcon from '@material-ui/icons/DeveloperBoardSharp';
 import ImportantDevicesSharpIcon from '@material-ui/icons/ImportantDevicesSharp';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import WebIcon from '@material-ui/icons/Web';
+import AppsSharpIcon from '@material-ui/icons/AppsSharp';
+import HomeIcon from '@material-ui/icons/Home';
 
 const drawerWidth = 240;
 
@@ -148,17 +150,21 @@ export default function PersistentDrawerRight(props) {
         </div>
         <Divider />
         <List>
-            <ListItem button key='About' onClick={(e)=>{props.clickAbout(); handleDrawerClose();}}>
+            <ListItem button key='Home' onClick={(e)=>{props.drawerClick('home'); handleDrawerClose();}}>
+              <ListItemIcon> <AppsSharpIcon /> </ListItemIcon>
+              <ListItemText primary='Home' />
+            </ListItem>
+            <ListItem button key='About' onClick={(e)=>{props.drawerClick('about'); handleDrawerClose();}}>
               <ListItemIcon> <AccountCircleIcon /> </ListItemIcon>
               <ListItemText primary='About' />
             </ListItem>
-            <ListItem button key='Resume'>
+            <ListItem button key='Resume' onClick={(e)=>{props.drawerClick('resume'); handleDrawerClose();}}>
               <ListItemIcon> <BusinessCenterIcon /> </ListItemIcon> <ListItemText primary='Resume' />
             </ListItem>
-            <ListItem button key='Articles'onClick={(e)=>{props.clickArticles(); handleDrawerClose();}}>
+            <ListItem button key='Articles'onClick={(e)=>{props.drawerClick('articles'); handleDrawerClose();}}>
               <ListItemIcon> <CreateOutlinedIcon /> </ListItemIcon> <ListItemText primary='Articles' />
             </ListItem>
-            <ListItem button key='Projects' onClick={(e)=>{props.clickApps(); handleDrawerClose();}}>
+            <ListItem button key='Projects' onClick={(e)=>{props.drawerClick('apps'); handleDrawerClose();}}>
               <ListItemIcon> <CodeSharpIcon /> </ListItemIcon> <ListItemText primary='Projects' />
             </ListItem>
         </List>

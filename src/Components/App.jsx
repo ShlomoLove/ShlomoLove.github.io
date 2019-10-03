@@ -19,46 +19,32 @@ class App extends React.Component {
       apps: false,
       resume: false,
     }
-    this.clickAbout = this.clickAbout.bind(this);
-    this.clickApps = this.clickApps.bind(this);
-    this.clickArticles = this.clickArticles.bind(this);
+    this.drawerClick = this.drawerClick.bind(this);
   }
 
-  clickAbout () {
-    this.setState({
-      home: false,
-      about: true,
-      articles: false,
-      apps: false,
-      resume: false,
-    })
-  }
+  // clickAbout () {
+  //   this.setState({
+  //     home: false,
+  //     about: true,
+  //     articles: false,
+  //     apps: false,
+  //     resume: false,
+  //   })
+  // }
 
-  clickArticles () {
-    this.setState({
-      home: false,
-      about: false,
-      articles: true,
-      apps: false,
-      resume: false,
-    })
-  }
-
-  clickApps () {
-    this.setState({
-      home: false,
-      about: false,
-      articles: false,
-      apps: true,
-      resume: false,
-    })
+  drawerClick(page) {
+    let tempObj = {};
+    for (let key in this.state) {
+      key === page ? tempObj[key] = true : tempObj[key] = false;
+    }
+    this.setState(tempObj)
   }
 
   render () {
     return (
       <div>
         <div className='drawerContainer'>
-          <PersistentDrawerRight className='drawerContainer' clickAbout={this.clickAbout} clickArticles={this.clickArticles} clickApps={this.clickApps} />
+          <PersistentDrawerRight className='drawerContainer' drawerClick={this.drawerClick} />
         </div>
         <Instructions/>
         <div className='mainApp'>
