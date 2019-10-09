@@ -155,6 +155,17 @@ body{
   margin-bottom: 2em; 
 }
 
+/**************** About ********************/
+
+.aboutText{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  justify-content: center;
+  color: #ff5050;
+  margin-bottom: 2em; 
+}
+
 /**************** Background ********************/
 
 .circle{
