@@ -111,7 +111,7 @@ body{
 .portraitContainer {
   display: flex;
   justify-content: center;
-  width: 30em;
+  width: 50em;
 }
 
 .portrait {
@@ -157,12 +157,39 @@ body{
 
 /**************** About ********************/
 
-.aboutText{
+.aboutContainer{
+  margin-top:5.5em; 
+  text-align: center;
+}
+
+.aboutTitle{
   font-family: 'Exo 2', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  justify-content: center;
-  color: #ff5050;
+  font-weight: 900;
+  font-size: 4em;
+  color: white;
+}
+
+.scott {
+  height: 35em; 
+  width: auto;
+  float: left;
+  padding-right: 1em; 
+  padding-bottom: .25em; 
+}
+
+.textContainer{
+  display: flex; 
+  flex-direction: column;
+  display: inline-block;
+  width: 80%;
+}
+
+.aboutText{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: left;
+  color: white;
   margin-bottom: 2em; 
 }
 
