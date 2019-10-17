@@ -203,7 +203,7 @@ body{
   border: solid orange;
 }
 .resumeLogo {
-  margin-top: 2em;
+  margin-top: 6%;
   width: 80%;
   height: auto;
   z-index: 2;
@@ -240,48 +240,69 @@ body{
 .resumeMainContainer{
   border: solid green;
   width: 100%;
+  height: 100%;
 }
 
 .resumeTopContainer {
   border: solid blue;
-  display: flex;
-  flex-direction: row;  
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  flex-wrap: nowrap;
 }
 
 .resumeTitleContainer{
   border: solid red;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  z-index: 2;
+  grid-template-rows: 3fr 3fr;
 }
 
 .resumeTitle {
-  margin-top: 2em;
-  margin-left: 1em;
+  z-index: 2;
+  margin-top: 6%;
+  margin-left: 4%;
   text-align: left;
   font-family: 'bebasNeueBold';
-  font-size: 3vw;
+  font-size: 3.5vw;
+  color: #00008B;
   border: solid pink;
 }
 
 .positionTitles{
+  z-index: 2;
   border: solid purple;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left: 4%;
 }
 
 .resumeContactDetails{
+  z-index: 2;
   border: solid turquoise;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
 }
 
 .resumeContactDigits {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.2vw;
+  text-align: right;
+  margin-right: 4%;
+  z-index: 2;
+  line-height: 190%;
   border: solid blue;
 }
 
 .resumeContactIcons {
+  z-index: 2;
   border: solid red;
 }
 
 .resumeIcons {
+  z-index: 2;
   height: 1em;
 }
 

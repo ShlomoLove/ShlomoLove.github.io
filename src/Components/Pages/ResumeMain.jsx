@@ -22,10 +22,10 @@ const ResumeMain= props => {
             Full-Stack Software Engineer
           </div>
         </div>
-        <div classNam e='resumeContactDetails'>
+        <div className='resumeContactDetails'>
           <div className='resumeContactDigits'>
             310-993-7231
-            <br/>
+            <br />
             snassau@gmail.com
             <br/>
             Los Angeles, CA
