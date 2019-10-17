@@ -5,7 +5,7 @@ const About = props => {
   return (
     <div className='aboutContainer'>
       <div className='aboutTitle'>
-        My Short Story
+        My Short(ish) Story
       </div>
       <div className='textContainer'>
         <img src={Scott} className='scott'></img>
@@ -25,7 +25,7 @@ const About = props => {
         As a project manager and scrum master, I seek to utilize my unique combination of technical skills and leadership acumen to build healthy and productive teams. My goal is to embody the scrum ideal of servant leadership and function as a coach who walks alongside the members of my team to create an environment where they are able to reach their full potential. I believe teams perform best when they are self-organizing, have bought into the mission of the organization and are animated by an internal motivation. In the highly competitive and faced paced world of technology, it is easy to become laser focused on the task and lose sight of the human element. As a certified facilitator in conflict resolution and communication techniques, I believe the most productive teams incorporate the personal aspect into team dynamics. 
         </div>
         <div className='aboutText'>
-        In my free time, I am an avid runner, although you probably have figured that out, but I also enjoy camping, hiking, surfing, baseball, hockey, reading and listening to podcasts. 
+        In my free time, I am an avid runner, although you probably figured that out already, but I also enjoy camping, hiking, surfing, baseball, hockey, reading and listening to podcasts. 
         </div>
       </div>
     </div>

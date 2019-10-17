@@ -1,3 +1,33 @@
+@font-face{
+  font-family: 'bebasNeueThin';
+  src: url('BebasNeue-Thin.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'bebasNeueRegular';
+  src: url('BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'bebasNeueLight';
+  src: url('BebasNeue-Light.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'bebasNeueBook';
+  src: url('BebasNeue-Book.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'bebasNeueBold';
+  src: url('BebasNeue-Bold.otf') format('opentype');
+  font-weight: normal;
+}
+
 body{
   background: #272A43;
   font-family: 'Alegreya Sans', sans-serif;
@@ -21,56 +51,6 @@ body{
   padding: 0;
   display: flex;
   flex-direction: column; 
-}
-/**************** Arrow Container ********************/
-
-.arrowContainer {
-  width: 100%;
-  height: 5em;
-  display: flex;
-  justify-content: flex-end; 
-}
-
-.arrow {
-  margin-right: 2em;
-  width: 15px;
-  height: 15px;
-  border: .5px solid;
-  align-items: flex-end;
-  border-color: #e82525 transparent transparent #ff5050;
-  transform: rotate(45deg);
-}
-
-.arrowSlider {
-  position: absolute;
-  -webkit-animation: slide 4s linear infinite; 
-          animation: slide 4s linear infinite;
-}
-
-.delay1 {
-  -webkit-animation-delay: 1s; 
-    animation-delay: 1s;
-}
-.delay2 {
-  -webkit-animation-delay: 2s; 
-    animation-delay: 2s;
-}
-.delay3 {
-  -webkit-animation-delay: 3s; 
-    animation-delay: 3s;
-}
-
-@-webkit-keyframes slide {
-  0% { opacity:0; transform: translateY(3em); }  
-  20% { opacity:1; transform: translateY(1em); }   
-  80% { opacity:1; transform: translateY(-1em); }  
-  100% { opacity:0; transform: translateY(-3em); } 
-}
-@keyframes slide {
-  0% { opacity:0; transform: translateY(3em); }  
-  20% { opacity:1; transform: translateY(1em); }   
-  80% { opacity:1; transform: translateY(-1em); }  
-  100% { opacity:0; transform: translateY(-3em); }  
 }
 
 /**************** Instructions ********************/
@@ -193,6 +173,121 @@ body{
   margin-bottom: 2em; 
 }
 
+/**************** Resume ********************/
+
+.resumeContainer{
+  margin-top: 4em;
+  width: 100%; 
+  text-align: center;
+}
+
+.resumePaper {
+  border: solid #ff5050;
+  background: white;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.sidePanel{
+  width: 100%;
+  height: 100%;
+  float: left;
+  z-index: 1;
+  background: lightgrey;
+}
+
+.logoContainer {
+  border: solid orange;
+}
+.resumeLogo {
+  margin-top: 2em;
+  width: 80%;
+  height: auto;
+  z-index: 2;
+  text-align: center;
+}
+
+.sideTitle{
+  font-family: 'bebasNeueRegular', sans-serif;
+  text-align: left;
+  z-index: 2;
+  font-size: 2vw;
+  margin-left: .25em;
+  margin-top: .5em;
+  margin-bottom: -.25em;
+}
+.skillsList{
+  z-index: 2;
+  margin-left: 1em; 
+}
+.skill{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  z-index: 2;
+}
+.skillTitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-left: .75em;
+  z-index: 2;
+}
+
+.resumeMainContainer{
+  border: solid green;
+  width: 100%;
+}
+
+.resumeTopContainer {
+  border: solid blue;
+  display: flex;
+  flex-direction: row;  
+}
+
+.resumeTitleContainer{
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeTitle {
+  margin-top: 2em;
+  margin-left: 1em;
+  text-align: left;
+  font-family: 'bebasNeueBold';
+  font-size: 3vw;
+  border: solid pink;
+}
+
+.positionTitles{
+  border: solid purple;
+}
+
+.resumeContactDetails{
+  border: solid turquoise;
+  display: flex;
+  flex-direction: row;
+}
+
+.resumeContactDigits {
+  border: solid blue;
+}
+
+.resumeContactIcons {
+  border: solid red;
+}
+
+.resumeIcons {
+  height: 1em;
+}
+
+
+
+
 /**************** Background ********************/
 
 .circle{
@@ -264,5 +359,62 @@ body{
   z-index: -1;
 }
 
+
+
+
+
+
+
+
+/**************** Arrow Container ********************/
+
+.arrowContainer {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.arrow {
+  margin-right: 2em;
+  width: 15px;
+  height: 15px;
+  border: .5px solid;
+  align-items: flex-end;
+  border-color: #e82525 transparent transparent #ff5050;
+  transform: rotate(45deg);
+}
+
+.arrowSlider {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite; 
+          animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% { opacity:0; transform: translateY(3em); }  
+  20% { opacity:1; transform: translateY(1em); }   
+  80% { opacity:1; transform: translateY(-1em); }  
+  100% { opacity:0; transform: translateY(-3em); } 
+}
+@keyframes slide {
+  0% { opacity:0; transform: translateY(3em); }  
+  20% { opacity:1; transform: translateY(1em); }   
+  80% { opacity:1; transform: translateY(-1em); }  
+  100% { opacity:0; transform: translateY(-3em); }  
+}
 
 

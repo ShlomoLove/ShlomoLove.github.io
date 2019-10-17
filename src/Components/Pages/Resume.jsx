@@ -1,9 +1,14 @@
 import React from 'react';
+import ResumeSide from './ResumeSide.jsx';
+import ResumeMain from './ResumeMain.jsx'
 
 const Resume = props => {
   return (
-    <div className='headerContainer'>
-      <div className='frontCopy1'>Hello Resume</div>
+    <div className='resumeContainer'>
+      <div className='resumePaper'>
+        <ResumeSide/>
+        <ResumeMain/>
+      </div>
     </div>
   )
 }

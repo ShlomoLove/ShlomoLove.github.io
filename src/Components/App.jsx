@@ -14,6 +14,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       home: true,
+      background: true,
       about: false,
       articles: false,
       apps: false,
@@ -22,21 +23,12 @@ class App extends React.Component {
     this.drawerClick = this.drawerClick.bind(this);
   }
 
-  // clickAbout () {
-  //   this.setState({
-  //     home: false,
-  //     about: true,
-  //     articles: false,
-  //     apps: false,
-  //     resume: false,
-  //   })
-  // }
-
   drawerClick(page) {
     let tempObj = {};
     for (let key in this.state) {
       key === page ? tempObj[key] = true : tempObj[key] = false;
     }
+    page === 'resume' ? tempObj['background'] = false : tempObj['background'] = true;
     this.setState(tempObj)
   }
 
@@ -46,10 +38,9 @@ class App extends React.Component {
         <div className='drawerContainer'>
           <PersistentDrawerRight className='drawerContainer' drawerClick={this.drawerClick} />
         </div>
-        <Instructions/>
+        {/* <Instructions/> */}
         <div className='mainApp'>
-          
-          <Background/>
+          {this.state.background && <Background/>}
           {this.state.home && <Home/>}
           {this.state.about && <About/>}
           {this.state.resume && <Resume/>}
