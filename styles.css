@@ -186,12 +186,14 @@ body{
   background: white;
   justify-content: center;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 7fr;
   width: 75%;
   margin: 0 auto;
 }
 
 .sidePanel{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   float: left;
@@ -199,9 +201,14 @@ body{
   background: lightgrey;
 }
 
-.logoContainer {
-  border: solid orange;
+.skillsContainer {
+  flex-grow: 2;
 }
+
+/* .logoContainer {
+  border: solid orange;
+} */
+
 .resumeLogo {
   margin-top: 6%;
   width: 80%;
@@ -215,99 +222,143 @@ body{
   text-align: left;
   z-index: 2;
   font-size: 2vw;
-  margin-left: .25em;
-  margin-top: .5em;
-  margin-bottom: -.25em;
+  margin-left: 1.5vw;
+  margin-top: .5vh;
+  margin-bottom: -.5vh;
 }
 .skillsList{
   z-index: 2;
-  margin-left: 1em; 
+  margin-left: 2.5vw; 
 }
+
 .skill{
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
+  font-weight: 300;
   z-index: 2;
+  line-height: 2.6vh;
 }
+.triangleSide{
+  font-size: 1.4vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 .skillTitle{
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: left;
-  margin-left: .75em;
+  margin-left: 2vw;
+  margin-top: 1vh;
   z-index: 2;
 }
 
-.resumeMainContainer{
+/* .resumeMainContainer{
   border: solid green;
-  width: 100%;
-  height: 100%;
-}
+} */
 
 .resumeTopContainer {
-  border: solid blue;
-  display: grid;
-  grid-template-columns: 4fr 3fr;
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
+  align-items: stretch;
+  height: 19.4vw;
 }
 
 .resumeTitleContainer{
-  border: solid red;
-  display: grid;
+  display: flex;
   z-index: 2;
-  grid-template-rows: 3fr 3fr;
+  flex-direction: column;
+  flex-grow: 3;
 }
 
 .resumeTitle {
   z-index: 2;
   margin-top: 6%;
-  margin-left: 4%;
+  margin-left: 1.5vw;
   text-align: left;
   font-family: 'bebasNeueBold';
   font-size: 3.5vw;
   color: #00008B;
-  border: solid pink;
 }
 
 .positionTitles{
   z-index: 2;
-  border: solid purple;
   font-family: 'Roboto';
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   text-align: left;
-  margin-left: 4%;
+  margin-left: 1.5vw;
 }
 
 .resumeContactDetails{
   z-index: 2;
-  border: solid turquoise;
-  display: grid;
-  grid-template-columns: 9fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow:2; 
+  margin-right: .5vw;
 }
 
 .resumeContactDigits {
   font-family: 'Roboto';
   font-weight: 300;
-  font-size: 1.2vw;
+  font-size: 1.25vw;
   text-align: right;
-  margin-right: 4%;
+  margin-top: 10%;
+  line-height: 2.6vw;
   z-index: 2;
-  line-height: 190%;
-  border: solid blue;
-}
-
-.resumeContactIcons {
-  z-index: 2;
-  border: solid red;
+  flex-grow: 5;
 }
 
 .resumeIcons {
   z-index: 2;
-  height: 1em;
+  height: 1vw;
 }
 
+/* .resumeExperience{
+  border: solid plum;
+} */
 
+.experienceTitle{
+  font-family: 'bebasNeueRegular', sans-serif;
+  text-align: left;
+  z-index: 2;
+  margin-left: 1.5vw; 
+  font-size: 2.1vw;
+  margin-top: .5vh;
+  margin-bottom: -.5vh;
+}
 
+.experienceSubTitle {
+  text-align: left;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-left: 2vw;
+}
+
+.triangle {
+  text-align: left;
+  font-size: 1.2vw;
+}
+
+.experienceDetails {
+  text-align: left;
+  font-size: 1.15vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color:#696969;
+  margin-left: 3.7vw;
+  text-indent: -1vw;
+  line-height: 2.2vh;
+  margin-right: .5vw;
+}
+
+.developmentDetails {
+  color:#808080;
+}
 
 /**************** Background ********************/
 
@@ -379,12 +430,6 @@ body{
   height: 10em;
   z-index: -1;
 }
-
-
-
-
-
-
 
 
 /**************** Arrow Container ********************/

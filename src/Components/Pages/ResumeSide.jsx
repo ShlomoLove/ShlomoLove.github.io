@@ -15,30 +15,28 @@ const ResumeSide = props => {
         <hr/>
         <div className='skillsList'>
           <div className='skill'>
-            &#8227; Scrum Certification - 'CSM'
+          <span className='triangleSide'>&#8227;</span> Scrum Certification - 'CSM'
           </div>
           <div className='skill'>
-            &#8227; Agile Leadership
+          <span className='triangleSide'>&#8227;</span> Agile Leadership
           </div>
           <div className='skill'>
-            &#8227; Communication
+          <span className='triangleSide'>&#8227;</span> Communication
           </div>
           <div className='skill'>
-            &#8227; Problem-Solving
+          <span className='triangleSide'>&#8227;</span> Problem-Solving
           </div>
           <div className='skill'>
-            &#8227; Strategic Planning
+          <span className='triangleSide'>&#8227;</span> Strategic Planning
           </div>
           <div className='skill'>
-            &#8227; Team Building / Collaboration
+          <span className='triangleSide'>&#8227;</span> Team Building / Collaboration
           </div>
           <div className='skill'>
-            &#8227; Conflict Resolution
+          <span className='triangleSide'>&#8227;</span> Conflict Resolution
           </div>
         </div>
-      </div>
 
-      <div className='skillsContainer'>
         <hr/>
         <div className='sideTitle'>
           TECHNICAL SKILLS 
@@ -49,22 +47,22 @@ const ResumeSide = props => {
           </div>
           <div className='skillsList'>
             <div className='skill'>
-              &#8227; JIRA / Trello
+            <span className='triangleSide'>&#8227;</span> JIRA / Trello
             </div>
             <div className='skill'>
-              &#8227; DevOps
+            <span className='triangleSide'>&#8227;</span> DevOps
             </div>
             <div className='skill'>
-              &#8227; npm / yarn / git
+            <span className='triangleSide'>&#8227;</span> npm / yarn / git
             </div>
             <div className='skill'>
-              &#8227; Webpack / Babel
+            <span className='triangleSide'>&#8227;</span> Webpack / Babel
             </div>
             <div className='skill'>
-              &#8227; Agile Methodologies
+            <span className='triangleSide'>&#8227;</span> Agile Methodologies
             </div>
             <div className='skill'>
-              &#8227; Docker
+            <span className='triangleSide'>&#8227;</span> Docker
             </div>
           </div>
           <div className='skillTitle'>
@@ -72,22 +70,22 @@ const ResumeSide = props => {
           </div>
           <div className='skillsList'>
             <div className='skill'>
-              &#8227; JavaScript (ES5 and ES6)
+            <span className='triangleSide'>&#8227;</span> JavaScript (ES5 and ES6)
             </div>
             <div className='skill'>
-              &#8227; TypeScript
+            <span className='triangleSide'>&#8227;</span> TypeScript
             </div>
             <div className='skill'>
-              &#8227; Ruby
+            <span className='triangleSide'>&#8227;</span> Ruby
             </div>
             <div className='skill'>
-              &#8227; PHP
+            <span className='triangleSide'>&#8227;</span> PHP
             </div>
             <div className='skill'>
-              &#8227; HTML5
+            <span className='triangleSide'>&#8227;</span> HTML5
             </div>
             <div className='skill'>
-              &#8227; CSS3
+            <span className='triangleSide'>&#8227;</span> CSS3
             </div>
           </div>
           <div className='skillTitle'>
@@ -95,19 +93,19 @@ const ResumeSide = props => {
           </div>
           <div className ='skillsList'>
             <div className='skill'>
-              &#8227; React / Redux
+            <span className='triangleSide'>&#8227;</span> React / Redux
             </div>
             <div className='skill'>
-              &#8227; React Native
+            <span className='triangleSide'>&#8227;</span> React Native
             </div>
             <div className='skill'>
-              &#8227; Angular
+            <span className='triangleSide'>&#8227;</span> Angular
             </div>
             <div className='skill'>
-              &#8227; Bootstrap
+            <span className='triangleSide'>&#8227;</span> Bootstrap
             </div>
             <div className='skill'>
-              &#8227; jQuery
+            <span className='triangleSide'>&#8227;</span> jQuery
             </div>
           </div>
           <div className='skillTitle'>
@@ -115,25 +113,25 @@ const ResumeSide = props => {
           </div>
           <div className='skillsList'>
             <div className='skill'>
-              &#8227; Node.js
+            <span className='triangleSide'>&#8227;</span> Node.js
             </div>
             <div className='skill'>
-              &#8227; Express
+            <span className='triangleSide'>&#8227;</span> Express
             </div>
             <div className='skill'>
-              &#8227; MySql / PostgreSQL
+            <span className='triangleSide'>&#8227;</span> MySql / PostgreSQL
             </div>
             <div className='skill'>
-              &#8227; MongoDB / Mongoose
+            <span className='triangleSide'>&#8227;</span> MongoDB / Mongoose
             </div>
             <div className='skill'>
-              &#8227; NginX
+            <span className='triangleSide'>&#8227;</span> NginX
             </div>
             <div className='skill'>
               &#8227; RESTful API Development
             </div>
             <div className='skill'>
-              &#8227; GraphQL
+            <span className='triangleSide'>&#8227;</span> GraphQL
             </div>
           </div>
           <div className='skillTitle'>
@@ -141,19 +139,19 @@ const ResumeSide = props => {
           </div>
           <div className='skillsList'>
             <div className='skill'>
-              &#8227; AWS / EC2
+            <span className='triangleSide'>&#8227;</span> AWS / EC2
             </div>
             <div className='skill'>
-              &#8227; Test Driven Development
+            <span className='triangleSide'>&#8227;</span> Test Driven Development
             </div>
             <div className='skill'>
-              &#8227; Jest
+            <span className='triangleSide'>&#8227;</span> Jest
             </div>
             <div className='skill'>
-              &#8227; Mocha / Chai
+            <span className='triangleSide'>&#8227;</span> Mocha / Chai
             </div>
             <div className='skill'>
-              &#8227; Loader.io
+            <span className='triangleSide'>&#8227;</span> Loader.io
             </div>
           </div>
       </div>
