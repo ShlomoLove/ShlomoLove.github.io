@@ -23,15 +23,15 @@ const ResumeTopRight = props => {
       </div>
       <div className='resumeContactDetails'>
         <div className='resumeContactDigits'>
-          310-993-7231 <img src={phoneIcon} className='resumeIcons'></img>
+          <a href='tel:310-993-7231'>310-993-7231 <img src={phoneIcon} className='resumeIcons'></img></a>
           <br />
-          snassau@gmail.com <img src={emailIcon} className='resumeIcons'></img>
+          <a href='mailto:snassau@gmail.com'>snassau@gmail.com <img src={emailIcon} className='resumeIcons'></img></a>
           <br/>
           Los Angeles, CA <img src={addressIcon} className='resumeIcons'></img>
           <br/>
-          github.com/ShlomoLove <img src={githubIcon} className='resumeIcons'></img>
+          <a href='https://github.com/ShlomoLove'>github.com/ShlomoLove <img src={githubIcon} className='resumeIcons'></img></a>
           <br/>
-          linkedin.com/in/scottnassauimg <img src={linkedinIcon} className='resumeIcons'></img>
+          <a href='https://www.linkedin.com/in/scottnassau/'>linkedin.com/in/scottnassau <img src={linkedinIcon} className='resumeIcons'></img></a>
         </div>
       </div>
     </div>

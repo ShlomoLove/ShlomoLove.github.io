@@ -1,9 +1,21 @@
 import React from 'react';
+import Abbibas from './Projects/Abbibas';
+import HPDance from './Projects/HPDance';
+import OuiQln from './Projects/OuiQln';
+import Schedulit from './Projects/Schedulit';
+import TicTacToe from './Projects/TicTacToe';
 
 const Apps = props => {
   return (
-    <div className='headerContainer'>
-      <div className='frontCopy1'>Coming Soon: Apps</div>
+    <div className='appsContainer'>
+      <div className='appsTitle'>Some recent projects</div>
+      <div className='appsGrid'>
+        <Schedulit/>
+        <OuiQln/>
+        <Abbibas/>
+        <HPDance/>
+        <TicTacToe/>
+      </div>
     </div>
   )
 }
