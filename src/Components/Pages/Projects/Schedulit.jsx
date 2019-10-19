@@ -3,7 +3,9 @@ import React from 'react';
 const Schedulit = props => {
   return (
     <div className='project'>
-      Schedulit
+      <div className='projectTitle'>
+        Schedulit
+      </div>
     </div>
   )
 }

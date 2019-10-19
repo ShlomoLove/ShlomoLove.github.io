@@ -91,12 +91,13 @@ body{
 .portraitContainer {
   display: flex;
   justify-content: center;
-  width: 50em;
+  width: 50vw;
 }
 
 .portrait {
-  height: auto; 
-  width: 55vw;
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
   border-radius: 40px;
   opacity: .75;
   border: solid #ff5050;
@@ -437,15 +438,18 @@ a {
 }
 
 .project {
-  border: solid green; 
+  border: solid grey; 
   border-radius: 40px;
-  background: #FFFAFA;
-  height: 30vh;
+  background: rgba(255,255,255,.7);
+  height: 40vh;
   width: 40vw;
   margin: 1.5vw; 
 }
 
-
+.projectTitle {
+  text-align: center;
+  color: #ff5050;
+}
 
 /**************** Background ********************/
 
