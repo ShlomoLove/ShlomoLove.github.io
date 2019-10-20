@@ -431,25 +431,114 @@ a {
   color: #ff5050;
 }
 
-.appsGrid{
-  display: grid;
+.appsFlex{
+  display: flex;
   margin-top:1vh;
-  grid-template-columns: 50% 50%;
+  flex-direction: column;
 }
 
 .project {
-  border: solid grey; 
-  border-radius: 40px;
-  background: rgba(255,255,255,.7);
-  height: 40vh;
-  width: 40vw;
-  margin: 1.5vw; 
+  /* border: solid rgba(255, 255, 255, .4);
+  border-width: thin;
+  border-radius: 2em;
+  background: rgba(255,255,255,.2); */
+  height: 56vh;
+  width: 90vw;
+  margin: 1.5vw;
 }
 
 .projectTitle {
   text-align: center;
   color: #ff5050;
+  margin-top: .5em;
+  /* margin-left: .5em; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+} 
+.projectContainer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: nowrap;
 }
+
+.projectSubTitle {
+  text-align: left;
+  margin-left: .5em;
+  color: black;
+  font-family: 'Roboto', san-serif;
+  font-weight: 500;
+  margin-top: .5em;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.projectTechnologies {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: .9vw;
+  color: black;
+  text-align: left;
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+.projectDetails {
+  background: rgba(255,255,255,.9);
+  border: solid silver;
+  border-width:thin;
+  border-radius: 2em;
+  width: 45%;
+  height: 100%;
+  margin: 1vw;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.projectDescription {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .9vw;
+  color: black;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.projectDemo {
+  border-radius: 2em;
+  width: 45%;
+  height: 100%;
+  float: right;
+  margin: 1vw;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.demoGif{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 2em;
+}
+
+.codeLink a{
+  margin-left: .5em;
+  color: black;
+  font-family: 'Roboto', san-serif;
+  font-weight: 500;
+  margin-top: .5em;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  float: left;
+}
+
+.codeLink a:hover {
+  cursor: pointer;
+}
+
 
 /**************** Background ********************/
 
@@ -521,7 +610,6 @@ a {
   height: 10em;
   z-index: -1;
 }
-
 
 /**************** Arrow Container ********************/
 

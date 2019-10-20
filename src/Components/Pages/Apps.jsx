@@ -9,7 +9,7 @@ const Apps = props => {
   return (
     <div className='appsContainer'>
       <div className='appsTitle'>Some recent projects</div>
-      <div className='appsGrid'>
+      <div className='appsFlex'>
         <Schedulit/>
         <OuiQln/>
         <Abbibas/>
