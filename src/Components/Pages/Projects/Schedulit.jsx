@@ -1,5 +1,6 @@
 import React from 'react';
 import schedulitDemo from '../../../../schedulit-demo.gif';
+import githubIcon from '../../../../githubIcon.png';
 
 const Schedulit = props => {
   return (
@@ -32,7 +33,7 @@ const Schedulit = props => {
               JAVASCRIPT, REACT, OAUTH2, SOCKET.IO, MONGODB, EXPRESS, AGILE, AWS EC2, Docker 
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/schedulit-shlomo'>GitHub Repository</a>
+            <a href='https://github.com/ShlomoLove/schedulit-shlomo'>view code<img src={githubIcon} className='githubIcon'></img></a>
           </div>
         </div>
 

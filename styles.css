@@ -537,6 +537,13 @@ a {
 
 .codeLink a:hover {
   cursor: pointer;
+  color: #ff5050
+}
+
+.githubIcon {
+  margin-left: .25em;
+  width: .75em;
+  height: .75em;
 }
 
 
