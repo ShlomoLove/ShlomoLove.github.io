@@ -110,7 +110,7 @@ class App extends React.Component {
             </div>
             <div className='scoreBoardBox'>
               <div className='scoreBoard'>
-                <div className='scoreBoardSubHeader'>Score Board</div>
+                <div className='scoreBoardSubHeader'>Scoreboard</div>
                 <div className='dodgerScore'> Dodgers <img src={dodgersLogo} className='scoreBoardLogo'></img> <span className='score'>{la}</span></div>
                 <div className='yankeeScore'> Yankees <img src={yankeesLogo} className='scoreBoardLogo'></img> <span className='score'>{ny}</span></div>
                 <div className='tieScore'> Tie: <span className='score'>{tie}</span></div>

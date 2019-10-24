@@ -75,15 +75,15 @@ body{
   text-align: center; 
   margin-top: 15vh;
   z-index: 1;
-  align-items: center;
   justify-content: center;
 }
 
 .frontCopy1{
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Rock Salt';
   font-size: 5vw;
   font-weight: 900;
-  text-align: center;
+  margin-right: 4vw;
+  text-align: right;
   background: linear-gradient(to right, white  20%, #e6e3e4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -91,14 +91,14 @@ body{
 .portraitContainer {
   display: flex;
   justify-content: center;
-  width: 50vw;
+  width: 100%;
 }
 
 .portrait {
-  width: 100%;
-  height: 50%;
+  width: 25vw;
+  height: 25vw;
   object-fit: contain;
-  border-radius: 40px;
+  border-radius: 50%;
   opacity: .75;
   border: solid #ff5050;
   border-style: groove; 
@@ -106,16 +106,18 @@ body{
 
 .frontCopy2{
   font-family: 'Exo 2', sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 100;
-  text-align: center;
+  text-align: right;
+  margin-right: 4vw;
   color: white;
 }
 .quotesContainer{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 89%;
   margin-top: 4em;
+  margin-left: 4vw;
 }
 
 .quote{
@@ -442,7 +444,7 @@ a {
   border-width: thin;
   border-radius: 2em;
   background: rgba(255,255,255,.2); */
-  height: 56vh;
+  height: 30vw;
   width: 90vw;
   margin: 1.5vw;
 }
@@ -649,7 +651,6 @@ a {
 
 .tictacContainer {
   align-content: center;
-  border: solid green;
   width: 100%;
 }
 
@@ -667,11 +668,7 @@ a {
   justify-self: center;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: 40% 60%;
-}
-
-.scoreBoardContainer {
-  background: rgba(10,10,225,0.8)
+  grid-template-columns: 35% 65%;
 }
 
 .scoreBoardHeader{
@@ -685,25 +682,15 @@ a {
 
 .scoreBoardSubHeader {
   font-family: 'Roboto';
-  font-weight: 500;
+  font-weight: 600;
   color: red;
-  font-size: 3.5vw;
-  margin-top: 1.5vw;
-  margin-left: 2vw;
+  font-size: 3vw;
+  margin-left: 1vw;
 }
 
 .scoreBoardBox {
-  background-color: rgba(255, 255, 255, .8);
-  height: 100%;
-}
-
-.scoreBoard {
-  font-family: 'Roboto';
-  font-weight: 500;
-  color: red;
-  font-size: 3.5vw;
-  margin-top: 1.5vw;
-  margin-left: 2vw;
+  background-color: rgba(255, 255, 255, .7);
+  height: 60%;
 }
 
 .dodgerScore {
@@ -711,7 +698,7 @@ a {
   color: dodgerblue;
   font-size: 3vw;
   margin-top: .5vw;
-  margin-left: 2.5vw;
+  margin-left: 1.5vw;
 }
 
 .yankeeScore {
@@ -719,7 +706,7 @@ a {
   color: navy;
   font-size: 3vw;
   margin-top: .5vw;
-  margin-left: 2.5vw;
+  margin-left: 1.5vw;
 }
 
 .tieScore {
@@ -727,7 +714,7 @@ a {
   color: black;
   font-size: 3vw;
   margin-top: .5vw;
-  margin-left: 2.5vw;
+  margin-left: 1.5vw;
 }
 
 .score{
@@ -760,12 +747,12 @@ a {
 }
 
 .currentMoveBox{
+  background: rgba(10,100,225,.6);
   height: 40%;
 }
 .tictacGameContainer{
   padding-top: 3vw;
   padding-bottom: 3vw;
-  /* background: rgba(10,10,225,0.3) */
 }
 
 .tictacGame{

@@ -3,13 +3,20 @@ import portrait from '../../../spnPortrait.jpg'
 
 const Home = props => {
   return (
-    <div className='headerContainer'>
-      <span className='frontCopy1'>Hi, my name is Scott!</span>
-      <span className='frontCopy2'>I lead teams & build websites</span>
-      <div className='portraitContainer'>
-        <img src={portrait} className='portrait'></img>
+    <div className='homeContainer'>
+      <div className='headerContainer'>
+        <span className='frontCopy1'>Hi,</span>
+        <span className='frontCopy1'>my name is</span>
+        <span className='frontCopy1'>Scott!</span>
+        <span className='frontCopy2'>I lead teams & build websites</span>
+        <span className='frontCopy2'>Thank you for visiting my page.</span>
       </div>
-      <span className='frontCopy2'>Thank you for visiting my page.</span>
+      <div className='portraitContainer'>
+        
+        <img src={portrait} className='portrait'></img>
+        
+      </div>
+      
       <div className='quotesContainer'>
         <span className='quote'>“I define a leader as anyone who takes responsibility for finding the potential in people and processes, and who has the courage to develop that potential.”</span>
         <span className='author'>Brené Brown, Dare to Lead</span>
