@@ -25,6 +25,7 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import WebIcon from '@material-ui/icons/Web';
 import AppsSharpIcon from '@material-ui/icons/AppsSharp';
 import HomeIcon from '@material-ui/icons/Home';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 const drawerWidth = 240;
 
@@ -166,6 +167,9 @@ export default function PersistentDrawerRight(props) {
             </ListItem>
             <ListItem button key='Projects' onClick={(e)=>{props.drawerClick('apps'); handleDrawerClose();}}>
               <ListItemIcon> <CodeSharpIcon /> </ListItemIcon> <ListItemText primary='Projects' />
+            </ListItem>
+            <ListItem button key='Contact' onClick={(e)=>{props.drawerClick('contact'); handleDrawerClose();}}>
+              <ListItemIcon> <ContactPhoneIcon /> </ListItemIcon> <ListItemText primary='Contact' />
             </ListItem>
         </List>
       </Drawer>

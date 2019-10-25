@@ -7,7 +7,6 @@ const ResumeBottomLeft = props => {
       <div className='sideTitle'>
         POWER SKILLS
       </div>
-      <hr/>
       <div className='skillsList'>
         <div className='skill'>
         <span className='triangleSide'>&#8227;</span> Scrum Certification - 'CSM'
@@ -36,7 +35,6 @@ const ResumeBottomLeft = props => {
       <div className='sideTitle'>
         TECHNICAL SKILLS 
       </div>
-      <hr/>
         <div className='skillTitle'>
           DEVELOPER TOOLS
         </div>

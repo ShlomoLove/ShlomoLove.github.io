@@ -14,15 +14,12 @@ const Resume = props => {
           </a>
         </button>
       </div>
+
       <div className='resumePaper'>
-        <div className='sidePanel'>
-          <ResumeTopLeft/>
-          <ResumeBottomLeft/>
-        </div>
-        <div className='resumeMainContainer'>
-          <ResumeTopRight/>
-          <ResumeBottomRight/>
-        </div>
+        <ResumeTopLeft/>
+        <ResumeTopRight/>
+        <ResumeBottomLeft/>
+        <ResumeBottomRight/>
       </div>
     </div>
   )

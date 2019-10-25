@@ -9,7 +9,7 @@ const Apps = props => {
   let {drawerClick} = props;
   return (
     <div className='appsContainer'>
-      <div className='appsTitle'>Some recent projects</div>
+      <div className='appsTitle'>some recent projects</div>
       <div className='appsFlex'>
         <Schedulit/>
         <OuiQln/>

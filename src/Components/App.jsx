@@ -9,6 +9,7 @@ import Resume from './Pages/Resume';
 import Home from './Pages/Home';
 import Instructions from './Pages/Instructions';
 import TTTApp from './Pages/Projects/TicTacToe/TTTApp';
+import Contact from './Pages/Contact';
 
 class App extends React.Component {
   constructor (props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
       apps: false,
       resume: false,
       playTTT: false,
+      contact: false,
     }
     this.drawerClick = this.drawerClick.bind(this);
   }
@@ -50,6 +52,7 @@ class App extends React.Component {
           {this.state.articles && <Articles/>}
           {this.state.apps && <Apps drawerClick={this.drawerClick}/>}
           {this.state.playTTT && <TTTApp/>}
+          {this.state.contact && <Contact/>}
         </div>
       </div>
     )
