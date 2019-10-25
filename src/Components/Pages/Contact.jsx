@@ -20,19 +20,22 @@ const Contact = props => {
       </div>
       
       <div className='contactName'>
-        Scott Nassau
+        SCOTT NASSAU
       </div>
       <div>
-        <a href='mailto:snassau@gmail.com' className='contactEmail'>snassau@gmail.com <EmailIcon/></a>
+        <a href='mailto:snassau@gmail.com' className='contactInfo'>snassau@gmail.com <EmailIcon className='contactIcon'/></a>
       </div>
       <div>
-        <a href='tel:310-993-7231' className='contactPhone'> 310-993-7231 <PhoneIphoneIcon/></a>
+        <a href='tel:310-993-7231' className='contactInfo'> 310-993-7231 <PhoneIphoneIcon className='contactIcon'/></a>
       </div>
       <div>
-        <a href='https://github.com/ShlomoLove' className='contactPhone'>github.com/ShlomoLove <GitHubIcon/></a>
+        <a href='https://github.com/ShlomoLove' className='contactInfo'>github.com/ShlomoLove <GitHubIcon className='contactIcon'/></a>
       </div>
       <div>
-        <a href='https://www.linkedin.com/in/scottnassau/' className='contactPhone'>linkedin.com/in/scottnassau <LinkedInIcon/></a>
+        <a href='https://www.linkedin.com/in/scottnassau/' className='contactInfo'>linkedin.com/in/scottnassau <LinkedInIcon className='contactIcon'/></a>
+      </div>
+      <div>
+        <a href='https://shlomolove.github.io' className='contactInfo'>shlomolove.github.io <LanguageIcon className='contactIcon'/></a>
       </div>
     </div>
   )

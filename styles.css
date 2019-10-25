@@ -587,40 +587,39 @@ a {
 .contactTitle {
   text-align: right;
   margin-right: 4vw;
-  font-size: 3vw;
-  font-family: 'Rock Salt';
+  font-size: 5vw;
+  font-family: 'Kavivanar';
   color: white;
 }
 
 .contactName {
   text-align: right;
   margin-right: 4vw;
-  font-size: 2vw;
-  font-weight: 400;
+  font-size: 3vw;
+  font-weight: 600;
   font-family: 'Roboto';
   margin-top: 3vw;
   color:  white;
 }
 
-.contactEmail {
+.contactInfo {
   text-align: right;
   margin-right: 4vw;
   font-size: 2vw;
   font-weight: 100;
   font-family: 'Roboto';
   color: white;
+  margin-top: .5vw;
   text-decoration: none;
 }
 
-.contactPhone {
-  text-align: right;
-  margin-right: 4vw;
-  font-size: 2vw;
-  font-weight: 100;
-  font-family: 'Exo 2';
-  text-decoration-style: none;
-  color:  white;
-  
+.contactInfo:hover {
+  cursor: pointer;
+  color: #ff5050;
+}
+
+.contactIcon{
+  margin-left: .5vw;
 }
 
 
