@@ -23,14 +23,17 @@ const Contact = props => {
         Scott Nassau
       </div>
       <div>
-        <a href='mailto:snassau@gmail.com' className='contactEmail'>snassau@gmail.com</a>
+        <a href='mailto:snassau@gmail.com' className='contactEmail'>snassau@gmail.com <EmailIcon/></a>
       </div>
       <div>
-        <a href='tel:310-993-7231' className='contactPhone'> 310-993-7231</a>
+        <a href='tel:310-993-7231' className='contactPhone'> 310-993-7231 <PhoneIphoneIcon/></a>
       </div>
-      {/* <ListItem button key='Resume' onClick={(e)=>{props.drawerClick('resume'); handleDrawerClose();}}>
-  <ListItemIcon> <GitHubIcon /> </ListItemIcon> <ListItemText primary='Resume' />
-</ListItem> */}
+      <div>
+        <a href='https://github.com/ShlomoLove' className='contactPhone'>github.com/ShlomoLove <GitHubIcon/></a>
+      </div>
+      <div>
+        <a href='https://www.linkedin.com/in/scottnassau/' className='contactPhone'>linkedin.com/in/scottnassau <LinkedInIcon/></a>
+      </div>
     </div>
   )
 }
