@@ -146,11 +146,11 @@ body{
 }
 
 .aboutTitle{
-  font-family: 'Rock Salt';
+  font-family: 'Kavivanar';
   font-weight: 900;
   font-size: 3vw;
   text-align: right;
-  margin-right: 6vw;
+  margin-right: 8vw;
   margin-bottom: 3vw;
   color: white;
 }
@@ -412,7 +412,15 @@ a {
   color:#808080;
 }
 
+/******************** Articles  *****************/
 
+.articlesTitle {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 5vw;
+  color: white;
+}
 
 
 /**************** Apps *************************/
