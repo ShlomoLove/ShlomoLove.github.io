@@ -79,9 +79,9 @@ body{
 }
 
 .frontCopy1{
-  font-family: 'Rock Salt';
-  font-size: 5vw;
-  font-weight: 900;
+  font-family: 'Dekko';
+  font-size: 8vw;
+  font-weight: 400;
   margin-right: 4vw;
   text-align: right;
   background: linear-gradient(to right, white  20%, #e6e3e4 100%);
@@ -146,8 +146,8 @@ body{
 }
 
 .aboutTitle{
-  font-family: 'Kavivanar';
-  font-weight: 900;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 3vw;
   text-align: right;
   margin-right: 8vw;
@@ -437,9 +437,9 @@ a {
 }
 
 .appsTitle {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 4vw;
-  font-weight: 400;
+  font-weight: 200;
   color: #ff5050;
 }
 
