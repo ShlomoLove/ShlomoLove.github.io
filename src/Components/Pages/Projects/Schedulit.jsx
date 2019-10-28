@@ -33,7 +33,7 @@ const Schedulit = props => {
               JAVASCRIPT, REACT, OAUTH2, SOCKET.IO, MONGODB, EXPRESS, AGILE, AWS EC2, Docker 
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/Abibas-SDC-Details-Module'>view code<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/schedulit-app'>view code<img src={githubIcon} className='githubIcon'></img></a>
           </div>
         </div>
 
