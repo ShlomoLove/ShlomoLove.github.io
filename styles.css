@@ -226,21 +226,33 @@ body{
 }
 
 .resumePaper {
-  border:0.05vw solid #ff5050;
   background: white;
   justify-content: center;
-  display: grid;
-  grid-template-columns: 2.7fr 7.3fr;
+  display: grid; 
   grid-template-rows: 1.8fr 8.2fr;
   width: 68vw;
   height: 88vw;
   margin: 0 auto;
+  z-index: 5;
+}
+
+.resumeTopHalfContainer {
+  display: grid;
+  grid-template-columns: 2.9837fr 7.0163fr;
+}
+
+.resumeBottomPng {
+  width: 68vw;
+}
+
+.resumeBottomPic {
+  max-width: 100%;
 }
 
 /********** Resume Top Left ***********/
 
 .logoContainer {
-  background: lightgray;
+  background: rgba(228, 231, 234, 0.906);
 }
 
 .resumeLogo {
@@ -326,25 +338,26 @@ a {
 
 /************ Resume Bottom Left **************/
 
-.skillsContainer {
+/* .skillsContainer {
   background: lightgray;
   overflow: hidden;
-}
+} */
 
-.sideTitle{
+/* .sideTitle{
   font-family: 'bebasNeueRegular', sans-serif;
   text-align: left;
   z-index: 2;
   font-size: 2vw;
   margin-left: 1.5vw;
-  /* margin-top: .5vh; */
+  margin-top: .5vh; 
   margin-bottom: -.5vw;
-}
-.skillsList{
+}  */
+
+/* .skillsList{
   z-index: 2;
   margin-left: 2.2vw; 
-}
-
+} */
+/* 
 .skill{
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -366,11 +379,11 @@ a {
   margin-left: 2vw;
   margin-top: .5vw;
   z-index: 2;
-}
+} */
 
 /*************** Resume Bottom Right *************/
 
-.resumeExperience{
+/* .resumeExperience{
   overflow: hidden;
 }
 
@@ -410,7 +423,27 @@ a {
 
 .developmentDetails {
   color:#808080;
-}
+} */
+
+/* @media (max-width: 880px) {
+  
+  .triangle {
+    font-size: 1vw;
+  }
+  
+  .experienceDetails {
+    font-size: 1.1vw;
+  }
+
+  .resumeExperience{
+    overflow: visible;
+  }
+
+  .skillsContainer {
+    background: lightgray;
+    overflow: visible;
+  }
+} */
 
 /******************** Articles  *****************/
 

@@ -3,6 +3,7 @@ import ResumeTopLeft from './ResumeTopLeft.jsx';
 import ResumeBottomLeft from './ResumeBottomLeft.jsx';
 import ResumeTopRight from './ResumeTopRight.jsx';
 import ResumeBottomRight from './ResumeBottomRight.jsx';
+import ResumeBottom from './ResumeBottom';
 
 const Resume = props => {
   return (
@@ -16,10 +17,13 @@ const Resume = props => {
       </div>
 
       <div className='resumePaper'>
-        <ResumeTopLeft/>
-        <ResumeTopRight/>
-        <ResumeBottomLeft/>
-        <ResumeBottomRight/>
+        <div className='resumeTopHalfContainer'>
+          <ResumeTopLeft/>
+          <ResumeTopRight/>
+        </div>
+        <ResumeBottom/>
+        {/* <ResumeBottomLeft/> */}
+        {/* <ResumeBottomRight/> */}
       </div>
     </div>
   )
