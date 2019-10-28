@@ -286,7 +286,7 @@ body{
   text-align: left;
   font-family: 'bebasNeueBold';
   font-size: 3.5vw;
-  color: #00008B;
+  color: rgba(8, 8, 92, 0.865);
 }
 
 .positionTitles{
