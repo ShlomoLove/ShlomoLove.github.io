@@ -6,8 +6,8 @@ import Logo from './Logo';
 const Background = props => {
 
   return (
-    <div>
-      <div className={classnames('ripple-background')}></div>
+    <div className='ripple-background'>
+      {/* <div className={classnames('ripple-background')}></div> */}
       <Logo/>
       <div className={classnames('circle', 'xxlarge', 'shade1')}></div>
       <div className={classnames('circle', 'xlarge', 'shade2')}></div>

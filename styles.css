@@ -73,14 +73,14 @@ body{
   width: 100%;
   flex-direction: column;
   text-align: center; 
-  margin-top: 15vh;
+  margin-top: 6vh;
   z-index: 1;
   justify-content: center;
 }
 
 .frontCopy1{
   font-family: 'Dekko';
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 400;
   margin-right: 4vw;
   text-align: right;
@@ -95,8 +95,8 @@ body{
 }
 
 .portrait {
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
   object-fit: contain;
   border-radius: 50%;
   opacity: .75;
@@ -631,9 +631,12 @@ a {
 }
 
 
-
-
 /**************** Background ********************/
+
+.ripple-background {
+  position: absolute;
+  z-index: -2; 
+}
 
 .circle{
   position: absolute;
@@ -644,22 +647,22 @@ a {
   box-shadow: 0vw 0vw .2vw 0vw #508fb9;
 }
 .small{
-  left: 2.5vw;
-  top: 7.5vw;
+  left: .5vw;
+  top: .5vw;
   width: 12vw;
   height: 12vw;
   opacity: 0.8;
 }
 .medium{
-  left: .5vw;
-  top: 5.5vw;
+  left: -1.5vw;
+  top: -1.5vw;
   width: 16vw;
   height: 16vw;
   opacity: 0.6;
 }
 .large{
-  left: -2.5vw;
-  top: 3vw;
+  left: -4.5vw;
+  top: -4vw;
   width: 22vw;
   height: 22vw;
   opacity: 0.4;
@@ -668,14 +671,14 @@ a {
   width: 36vw;
   height: 36vw;
   left: -12vw;
-  top: -6vw;
+  top: -12vw;
   opacity: 0.2;
 }
 .xxlarge{
   width: 60vw;
   height: 60vw;
-  left: -22vw;
-  top: -17vw;
+  left: -24vw;
+  top: -24vw;
   opacity: 0.1;
 }
 
@@ -696,9 +699,9 @@ a {
 /**************** Logo ********************/
 
 .logo {
-  position: absolute;
-  left: 2vw;
-  top: 7vw;
+  /* position: absolute; */
+  left: 4vw;
+  top: 4vw;
   width: 13vw;
   height: 13vw;
   z-index: -1;
