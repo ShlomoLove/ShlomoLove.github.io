@@ -232,7 +232,7 @@ body{
   background: white;
   justify-content: center;
   display: grid; 
-  grid-template-rows: 1.8fr 8.2fr;
+  grid-template-rows: 1.6fr 8.4fr;
   width: 68vw;
   height: 88vw;
   margin: 0 auto;
@@ -241,7 +241,7 @@ body{
 
 .resumeTopHalfContainer {
   display: grid;
-  grid-template-columns: 2.9837fr 7.0163fr;
+  grid-template-columns: 2.4fr 7.6fr;
 }
 
 .resumeBottomPng {
@@ -255,12 +255,13 @@ body{
 /********** Resume Top Left ***********/
 
 .logoContainer {
-  background: rgba(228, 231, 234, 0.906);
+  background: rgba(255, 255, 255, 1);
 }
 
 .resumeLogo {
-  margin-top: 6%;
-  width: 80%;
+  margin-top: 12%;
+  width: 65%;
+  margin-left: 5%;
   z-index: 2;
   text-align: center;
 }
@@ -288,7 +289,7 @@ body{
   margin-left: 1.5vw;
   text-align: left;
   font-family: 'bebasNeueBold';
-  font-size: 3.5vw;
+  font-size: 3vw;
   color: rgba(8, 8, 92, 0.865);
 }
 
@@ -296,7 +297,7 @@ body{
   z-index: 2;
   font-family: 'Roboto';
   font-weight: 300;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   text-align: left;
   margin-left: 1.5vw;
 }
@@ -307,7 +308,7 @@ body{
   flex-direction: row;
   flex-wrap: nowrap;
   flex-grow:2; 
-  margin-right: .5vw;
+  margin-right: 4vw; 
 }
 
 a {
@@ -320,7 +321,7 @@ a {
   font-size: 1.25vw;
   text-align: right;
   margin-top: 12%;
-  line-height: 2.5vw;
+  line-height: 1.85vw;
   z-index: 2;
   flex-grow: 5;
 }
@@ -337,6 +338,7 @@ a {
 .resumeIcons {
   z-index: 2;
   height: 1vw;
+  margin-left: 1vw; 
 }
 
 /************ Resume Bottom Left **************/

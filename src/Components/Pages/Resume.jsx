@@ -10,7 +10,7 @@ const Resume = props => {
     <div className='resumeContainer'>
       <div className='buttonContainer'>
         <button className='button'>
-          <a href='https://nassauwebsite.s3-us-west-2.amazonaws.com/SNassau+PM+Resume.pdf'>
+          <a href='https://nassauwebsite.s3-us-west-2.amazonaws.com/SNassau_SE_Resume.pdf'>
           PDF Version
           </a>
         </button>

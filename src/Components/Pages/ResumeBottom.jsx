@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePng from '../../../SNassauResumebottom.png';
+import resumePng from '../../../SNassau_SE_Resume_Bottom.png';
 
 const ResumeBottom = props => {
   return (
