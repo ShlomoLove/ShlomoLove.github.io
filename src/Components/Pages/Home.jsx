@@ -27,6 +27,10 @@ const Home = props => {
         <span className='author'>Teddy Roosevelt</span>
         <span className='quote'>Vulnerability is the birthplace of innovation, creativity and change</span>
         <span className='author'>Brené Brown</span>
+        <span className='quote'>Such contradictions are an inseparable part of every human culture. In fact, they are culture’s engines, responsible for the creativity and dynamism of our species. Just as when two clashing musical notes played together force a piece of music forward, so discord in our thoughts, ideas, and values compel us to think, reevaluate, and criticize. Consistency is the playground of dull minds.</span>
+        <span className='author'>Yuval Noah Harari, Sapiens: A Brief History of Humankind</span>
+        <span className='quote'>Success is a function of persistence and doggedness and the willingness to work hard for twenty-two minutes to make sense of something that most people would give up on after thirty seconds.</span>
+        <span className='author'>Malcolm Gladwell, Outliers: The Story of Success</span>
       </div>
     </div>
   )
