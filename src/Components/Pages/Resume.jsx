@@ -5,7 +5,7 @@ import ResumeTopRight from './ResumeTopRight.jsx';
 import ResumeBottomRight from './ResumeBottomRight.jsx';
 import ResumeBottom from './ResumeBottom';
 
-const Resume = props => {
+const Resume = () => {
   return (
     <div className='resumeContainer'>
       <div className='buttonContainer'>
@@ -22,8 +22,6 @@ const Resume = props => {
           <ResumeTopRight/>
         </div>
         <ResumeBottom/>
-        {/* <ResumeBottomLeft/> */}
-        {/* <ResumeBottomRight/> */}
       </div>
     </div>
   )

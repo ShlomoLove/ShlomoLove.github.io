@@ -28,7 +28,6 @@ class App extends React.Component {
   }
 
   drawerClick(page) {
-    console.log (page, 'this is page')
     let tempObj = {};
     for (let key in this.state) {
       key === page ? tempObj[key] = true : tempObj[key] = false;
