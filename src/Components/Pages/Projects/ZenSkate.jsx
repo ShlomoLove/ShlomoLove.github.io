@@ -17,7 +17,7 @@ const ZenSkate = () => {
             Description
           </div>
             <div className='projectDescription'>
-            Zen Skate Co is a Full-Stack Application built with JavaScript and React to provide an interactive user database of Los Angeles Skate Parks. The is in the process of adding new features and functionality. 
+            Zen Skate Co is a Full-Stack Application built with JavaScript and React to provide an interactive user database of Los Angeles Skate Parks. The App is in the alpha stage of development and will continue to add new features and functionality. 
             </div>
             <div className='projectSubTitle'>
               Features
