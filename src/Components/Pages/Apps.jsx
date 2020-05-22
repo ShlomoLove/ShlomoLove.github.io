@@ -5,6 +5,7 @@ import OuiQln from './Projects/OuiQln';
 import Schedulit from './Projects/Schedulit';
 import TicTacToe from './Projects/TicTacToe';
 import ZenSkate from './Projects/ZenSkate';
+import StockTweet from './Projects/StockTweet'
 
 const Apps = props => {
   let {drawerClick} = props;
@@ -14,6 +15,7 @@ const Apps = props => {
       <div className='appsFlex'>
         <ZenSkate/>
         <Schedulit/>
+        <StockTweet/>
         <OuiQln/>
         <Abibas/>
         <HPDance/>
