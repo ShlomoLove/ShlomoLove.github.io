@@ -3,9 +3,9 @@ import StockTweetDemo from '../../../../stock_twits.gif';
 import githubIcon from '../../../../githubIcon.png';
 
 const StockTweet = () => {
-  const onButtonClick = () => {
-    window.location.href = 'http://34.215.30.234/'
-  }
+  // const onButtonClick = () => {
+  //   window.location.href = 'http://34.215.30.234/'
+  // }
   return (
     <div className='project'>
       <div className='projectContainer'>
@@ -32,9 +32,9 @@ const StockTweet = () => {
             <div className='projectTechnologies'>
               JAVASCRIPT, REACT, AWS EC2, MOMENT, EXPRESS, MATERIAL-UI, STYLED-COMPONENTS, DOCKER
             </div>
-            <div className='projectButtonContainer'>
+            {/* <div className='projectButtonContainer'>
               <button className='projectButton' onClick={(()=> onButtonClick())}>VISIT SITE</button>
-            </div>
+            </div> */}
             <div className='codeLink'>
             <a href='https://github.com/ShlomoLove/stock-tweet'>view code<img src={githubIcon} className='githubIcon'></img></a>
           </div>
