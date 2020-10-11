@@ -10,7 +10,7 @@ const Resume = () => {
     <div className='resumeContainer'>
       <div className='buttonContainer'>
         <button className='button'>
-          <a href='https://nassauwebsite.s3-us-west-2.amazonaws.com/SNassau_SE_Resume.pdf'>
+          <a href='https://nassauwebsite.s3-us-west-2.amazonaws.com/Nassau_Resume.pdf'>
           PDF Version
           </a>
         </button>

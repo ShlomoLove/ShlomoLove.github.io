@@ -9,7 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-const Contact = props => {
+const Contact = () => {
   return (
     <div className='contactContainer'>
       <div className='contactTitle'>
