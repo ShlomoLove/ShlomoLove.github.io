@@ -14,11 +14,11 @@ const ResumeTopRight = props => {
         Scott P Nassau
         </div>
         <div className='positionTitles'>
-          Project Manager
+          Full-Stack Software Engineer
           <br/>
           Certified Scrum Master
           <br/>
-          Full-Stack Software Engineer
+          Project Manager
         </div>
       </div>
       <div className='resumeContactDetails'>
@@ -26,8 +26,6 @@ const ResumeTopRight = props => {
           <a href='tel:310-993-7231'>310-993-7231 <img src={phoneIcon} className='resumeIcons'></img></a>
           <br />
           <a href='mailto:snassau@gmail.com'>snassau@gmail.com <img src={emailIcon} className='resumeIcons'></img></a>
-          <br/>
-          Los Angeles, CA <img src={addressIcon} className='resumeIcons'></img>
           <br/>
           <a href='https://github.com/ShlomoLove'>github.com/ShlomoLove <img src={githubIcon} className='resumeIcons'></img></a>
           <br/>
