@@ -1,9 +1,6 @@
 import React from 'react';
-import ResumeTopLeft from './ResumeTopLeft.jsx';
-import ResumeBottomLeft from './ResumeBottomLeft.jsx';
-import ResumeTopRight from './ResumeTopRight.jsx';
-import ResumeBottomRight from './ResumeBottomRight.jsx';
-import ResumeBottom from './ResumeBottom';
+import ResumeTop from './ResumeTop.jsx';
+import ResumeBottom from './ResumeBottom.jsx';
 
 const Resume = () => {
   return (
@@ -17,11 +14,8 @@ const Resume = () => {
       </div>
 
       <div className='resumePaper'>
-        <div className='resumeTopHalfContainer'>
-          <ResumeTopLeft/>
-          <ResumeTopRight/>
-        </div>
-        <ResumeBottom/>
+          <ResumeTop/>
+          <ResumeBottom/>
       </div>
     </div>
   )

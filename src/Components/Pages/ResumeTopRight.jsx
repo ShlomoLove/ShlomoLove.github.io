@@ -14,11 +14,11 @@ const ResumeTopRight = props => {
         Scott P Nassau
         </div>
         <div className='positionTitles'>
-          Full-Stack Software Engineer
+            FULL-STACK SOFTWARE ENGINEER
           <br/>
-          Certified Scrum Master
+            CERTIFIED SCRUM MASTER
           <br/>
-          Project Manager
+            PROJECT MANAGER
         </div>
       </div>
       <div className='resumeContactDetails'>
