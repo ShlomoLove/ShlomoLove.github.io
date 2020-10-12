@@ -13,7 +13,7 @@ const Home = props => {
         <div className='headerContainer'>
           <span className='frontCopy1'>HI,</span>
           <span className='frontCopy1'>MY NAME IS</span>
-          <span className={classnames('frontCopy', 'frontCopy1')}>SCOTT!</span>
+          <span className={classnames('frontCopy', 'frontCopy1')}>SCOTT!!</span>
           <span className='frontCopy2'>I lead teams & build websites</span>
           <span className='frontCopy2'>Thank you for visiting my page.</span>
         </div>
