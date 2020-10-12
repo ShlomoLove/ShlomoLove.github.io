@@ -121,6 +121,7 @@ body{
   margin-right: 4vw;
   color: white;
 }
+
 .quotesContainer{
   display: flex;
   flex-direction: column;
@@ -243,7 +244,7 @@ body{
   height: 88vw;
   margin: 0 auto;
   z-index: 5;
-  padding: 3% 3% 0 3%; 
+  padding: 3% 3.5% 0 3%; 
 }
 
 .resumeBottomPng {
@@ -308,12 +309,20 @@ body{
   color: #252525;
 }
 
-.resumeContactDetails{
+.resumeContactDetailsContainer{
   z-index: 2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  color: #5E5E5E;
+  line-height: 1.70vw;
+  margin-top: 2%; 
+  z-index: 2;
+}
+
+.resumeContactDetails {
+  flex-grow: 4;
   color: #5E5E5E; 
 }
 
@@ -322,21 +331,23 @@ a {
   color: #5E5E5E;
 }
 
-.resumeContactDigits {
+.resumeContactMethod {
+  display: flex; 
+  flex-direction: row; 
+  color: #5E5E5E;
   font-family: 'HelveticaNeue-Light';
-  font-size: 1.1vw;
-  text-align: right;
-  line-height: 2.305vw;
-  z-index: 2;
-  flex-grow: 4;
+  font-size: 1.05vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+.resumeContactMethod a {
   color: #5E5E5E;
 }
 
-.resumeContactDigits a {
-  color: #5E5E5E;
-}
-
-.resumeContactDigits a:hover {
+.resumeContactMethod a:hover {
   cursor: pointer;
   color: #ff5050;
 }
@@ -345,6 +356,7 @@ a {
   z-index: 2;
   height: 1vw;
   margin-left: 1vw;
+  text-align: center;
 }
 
 /************ Resume Bottom Left **************/
@@ -396,7 +408,7 @@ a {
 
 .resumeExperience{
   overflow: hidden;
-  margin-top: .25vw; 
+  margin-top: .3vw; 
 }
 
 .experienceTitle{

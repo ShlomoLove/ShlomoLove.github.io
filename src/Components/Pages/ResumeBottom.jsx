@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResumeBottom = props => {
+const ResumeBottom = () => {
   return (
     <div className='resumeExperience'>
       <div className='professionalExperContainer'>
