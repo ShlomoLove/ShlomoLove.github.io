@@ -1,14 +1,13 @@
 import React from 'react';
 import Background from './Background';
-import classnames from 'classnames';
 import PersistentDrawerRight from './TopDrawer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './Pages/About';
 import Articles from './Pages/Articles';
 import Apps from './Pages/Apps'
 import Resume from './Pages/Resume';
 import Home from './Pages/Home';
-import Instructions from './Pages/Instructions';
+// import Instructions from './Pages/Instructions';
 import TTTApp from './Pages/Projects/TicTacToe/TTTApp';
 import Contact from './Pages/Contact';
 
@@ -40,11 +39,22 @@ class App extends React.Component {
   render () {
     return (
       <>
-        {/* <div className='drawerContainer'>
+        <div className='drawerContainer'>
           <PersistentDrawerRight className='drawerContainer' drawerClick={this.drawerClick} />
-        </div> */}
+        </div>
         {/* <Instructions/> */}
-        <Router>
+        <div className='mainApp'>
+          {this.state.background && <Background/>}
+          {this.state.home && <Home/>}
+          {this.state.about && <About/>}
+          {this.state.resume && <Resume/>}
+          {this.state.articles && <Articles/>}
+          {this.state.apps && <Apps drawerClick={this.drawerClick}/>}
+          {this.state.playTTT && <TTTApp/>}
+          {this.state.contact && <Contact/>}
+        </div>
+      </>
+        /* <Router>
           <Switch>
             <Route exact path="/">
               <Home drawerClick={this.drawerClick}/>
@@ -68,19 +78,7 @@ class App extends React.Component {
               <TTTApp drawerClick={this.drawerClick}/>
             </Route>
           </Switch>
-        </Router>
-        
-        {/* <div className='mainApp'>
-          {this.state.background && <Background/>}
-          {this.state.home && <Home/>}
-          {this.state.about && <About/>}
-          {this.state.resume && <Resume/>}
-          {this.state.articles && <Articles/>}
-          {this.state.apps && <Apps drawerClick={this.drawerClick}/>}
-          {this.state.playTTT && <TTTApp/>}
-          {this.state.contact && <Contact/>}
-        </div> */}
-      </>
+        </Router> */
     )
   }
 }
