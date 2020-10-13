@@ -1,7 +1,6 @@
 import React from 'react';
 import abibasLogo from '../../../../abibas.jpg';
-import githubIcon from '../../../../githubIcon.png';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Abibas = props => {
   return (
@@ -30,7 +29,7 @@ const Abibas = props => {
               JAVASCRIPT, POSTGRESQL, MONGODB, NODE, EXPRESS, DOCKER, NGINX, REDIS, AWS, AMAZON LOAD BALANCER, LOADER.IO, WEBPACK, JEST, ARTILLERY, REACT 
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/Abibas-SDC-Details-Module'>view code<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/Abibas-SDC-Details-Module'>view code<GitHubIcon className='githubIcon'></GitHubIcon></a>
           </div>
         </div>
 

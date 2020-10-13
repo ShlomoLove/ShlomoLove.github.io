@@ -34,6 +34,12 @@
   font-weight: normal;
 }
 
+@font-face{
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue';
+  src: url('helveticaneue_boldcond-webfont.woff') format('woff');
+  font-weight: normal;
+}
+
 body{
   background: #272A43;
   font-family: 'Alegreya Sans', sans-serif;
@@ -197,11 +203,14 @@ body{
   margin-top: .5em;
   width: 100%; 
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
 }
 
 .buttonContainer {
-  width: 100%;
-  height: 5vw;
   margin-top: 1.5em;
   margin-bottom: 2em;
   text-align: right;
@@ -212,7 +221,6 @@ body{
 } 
 
 .button {
-  margin-right: 16%;
   padding:1vw;
   border:0.1vw solid #ff5050;
   border-radius:.5em;
@@ -227,6 +235,7 @@ body{
 
 .button a:hover {
   color: #130a0a;
+  background-color: #ff5050;
 }
 
 .button:hover {
@@ -240,19 +249,8 @@ body{
   justify-content: center;
   display: grid; 
   grid-template-rows: 1fr 9fr;
-  width: 68vw;
-  height: 88vw;
   margin: 0 auto;
   z-index: 5;
-  padding: 3% 3.5% 0 3%; 
-}
-
-.resumeBottomPng {
-  width: 68vw;
-}
-
-.resumeBottomPic {
-  max-width: 100%;
 }
 
 /********** Resume Top Left ***********/
@@ -262,13 +260,10 @@ body{
   display: flex; 
   justify-content: center;
   align-items: center;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .resumeLogo {
-  max-width: 100%;
-  max-height: 100%;
-  width: 78%; 
   z-index: 2;
   text-align: center;
 }
@@ -284,28 +279,22 @@ body{
   display: flex;
   z-index: 2;
   flex-direction: column;
-  flex-grow: 4; 
+  flex-grow: 4;
 }
 
 .resumeTitle {
   display: flex; 
   justify-content: flex-start;
   z-index: 2;
-  margin-left: 1.5vw;
   text-align: left;
-  font-family: 'HelveticaNeue-CondensedBlack';
-  letter-spacing: .2vw;
-  font-size: 2.8vw;
+  font-family: 'HelveticaNeue-CondensedBold';
   color: rgba(8, 8, 92, 0.865);
 }
 
 .positionTitles{
   z-index: 2;
   font-family: 'HelveticaNeue-Thin';
-  font-size: 1.1vw;
   text-align: left;
-  margin-left: 1.5vw;
-  line-height: 1.6vw;
   color: #252525;
 }
 
@@ -314,16 +303,8 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* flex-grow: 2; */
   color: #5E5E5E;
-  line-height: 1.70vw;
-  margin-top: 2%; 
   z-index: 2;
-}
-
-.resumeContactDetails {
-  flex-grow: 4;
-  color: #5E5E5E; 
 }
 
 a {
@@ -336,12 +317,9 @@ a {
   flex-direction: row; 
   color: #5E5E5E;
   font-family: 'HelveticaNeue-Light';
-  font-size: 1.05vw;
   justify-content: flex-end;
   align-items: center;
 }
-
-
 
 .resumeContactMethod a {
   color: #5E5E5E;
@@ -354,103 +332,38 @@ a {
 
 .resumeIcons {
   z-index: 2;
-  height: 1vw;
-  margin-left: 1vw;
   text-align: center;
 }
 
-/************ Resume Bottom Left **************/
-
-/* .skillsContainer {
-  background: lightgray;
-  overflow: hidden;
-} */
-
-/* .sideTitle{
-  font-family: 'bebasNeueRegular', sans-serif;
-  text-align: left;
-  z-index: 2;
-  font-size: 2vw;
-  margin-left: 1.5vw;
-  margin-top: .5vh; 
-  margin-bottom: -.5vw;
-}  */
-
-/* .skillsList{
-  z-index: 2;
-  margin-left: 2.2vw; 
-} */
-/* 
-.skill{
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1vw;
-  font-weight: 300;
-  z-index: 2;
-  line-height: 1.39vw;
-}
-.triangleSide{
-  font-size: 1.3vw;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.skillTitle{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1vw;
-  text-align: left;
-  margin-left: 2vw;
-  margin-top: .5vw;
-  z-index: 2;
-} */
 
 /*************** Resume Bottom Right *************/
 
 .resumeExperience{
   overflow: hidden;
-  margin-top: .3vw; 
 }
 
 .experienceTitle{
   font-family: 'HelveticaNeue-Medium', sans-serif;
   text-align: left;
   z-index: 2;
-  margin-left: 1.5vw; 
-  font-size: 1.4vw;
-  margin-bottom: .01vw;
   color: #515151;
 }
 
 .experienceSubTitle {
   text-align: left;
-  font-size: 1.1vw;
   font-family: 'HelveticaNeue-Medium', sans-serif;
-  font-weight: 500;
-  margin-left: 3.5vw;
-  margin-top: .1vw;
 }
 
 .triangle {
-  text-align: left;
-  font-size: .8vw;
-  margin-right: .2vw;     
-}
-
-.experienceDetailsContainers {
-  margin-bottom: .2vw;
-  margin-left: 3.5vw;  
+  text-align: left; 
 }
 
 .experienceDetails {
   display: flex; 
   flex-direction: row;
   text-align: left;
-  font-size: 1.08vw;
   font-family: 'HelveticaNeue-Light', sans-serif;
-  font-weight: 300;
   color:#757575;
-  margin-left: 1.5vw;
-  line-height: 1.2vw;
 }
 
 .developmentDetails {
@@ -460,36 +373,422 @@ a {
 
 .skillsSubTitle {
   text-align: left;
-  font-size: 1.1vw;
   font-family: 'HelveticaNeue-Medium', sans-serif;
-  margin-left: 3.5vw;
-  line-height: 1.3vw;
 }
 
 .developmentDetailsAlt {
   color:#808080;
   font-family: 'HelveticaNeue-Medium', sans-serif;
-  letter-spacing: -.04vw;
 } 
 
-/* @media (max-width: 880px) {
-  
-  .triangle {
-    font-size: 1vw;
-  }
-  
-  .experienceDetails {
-    font-size: 1.1vw;
-  }
 
+@media (min-width: 1000px) {
+  .buttonContainer{
+    width: 850px; 
+  }
+  .resumePaper {
+    width: 850px; 
+    height: 1100px; 
+    padding: 38px 38px 38px 38px; 
+  }
+  .resumeLogo {
+    width: 103px; 
+    z-index: 2;
+    text-align: center;
+  }  
+  .resumeTitleContainer{
+    margin-left: 25px;
+  }
+  .resumeTitle{
+    font-size: 30px;
+    letter-spacing: 2px; 
+  }
+  .positionTitles{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .resumeContactDetailsContainer{
+    margin-top: 5px;
+  }
+  .resumeContactMethod {
+    font-size: 14px;
+    line-height: 19.8px;
+  }
+  .resumeIcons {
+    height: 12px;
+    margin-left: 12px;
+    margin-top: 2px; 
+  }
   .resumeExperience{
-    overflow: visible;
+    margin-top: 5px; 
   }
+  .experienceTitle{
+    margin-left: 10px; 
+    font-size: 18px;
+    line-height: 18px;  
+    margin-bottom: 2px;
+    margin-top: 4px; 
+    color: #515151;
+  }
+  .experienceSubTitle {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 1px;
+  }
+  .triangle {
+    font-size: 10px;
+    margin-right: 10px;     
+  }
+  .experienceDetailsContainers {
+    margin-bottom: 2px;
+    margin-left: 25px;  
+  }
+  .experienceDetails {
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 14px;
+    letter-spacing: -.08px;  
+  }
+  .skillsSubTitle {
+    font-size: 14.5px;
+    margin-left: 25px;
+    line-height: 18px;
+  }
+  .developmentDetails{
+    letter-spacing: -.2px;
+    font-size: 14.45px;  
+  }
+  .developmentDetailsAlt {
+    letter-spacing: -.7px;
+    font-size: 14.45px; 
+  } 
+}
 
-  .skillsContainer {
-    background: lightgray;
-    overflow: visible;
+@media (max-width: 1000px) and (min-width: 770px) {
+  .buttonContainer{
+    width: 744px; 
   }
+  .resumePaper {
+    width: 744px; 
+    height: 963px; 
+    padding: 28px 33px 30px 33px; 
+  }
+  .resumeLogo {
+    width: 91px; 
+    z-index: 2;
+    text-align: center;
+  }  
+  .resumeTitleContainer{
+    margin-left: 22px;
+  }
+  .resumeTitle{
+    font-size: 26.3px;
+    letter-spacing: 1.7px; 
+  }
+  .positionTitles{
+    font-size: 12.5px;
+    line-height: 18px;
+  }
+  .resumeContactDetailsContainer{
+    margin-top: 3.5px;
+  }
+  .resumeContactMethod {
+    font-size: 12px;
+    line-height: 17.5px;
+  }
+  .resumeIcons {
+    height: 10.5px;
+    margin-left: 10.5px;
+    margin-top: 1.8px; 
+  }
+  .resumeExperience{
+    margin-top: 4.2px; 
+  }
+  .experienceTitle{
+    margin-left: 9px; 
+    font-size: 16px;
+    line-height: 16px;  
+    margin-bottom: 1.8px;
+    margin-top: 3.5px; 
+    color: #515151;
+  }
+  .experienceSubTitle {
+    font-size: 12.8px;
+    margin-left: 21px;
+    margin-top: 1px;
+  }
+  .triangle {
+    font-size: 9px;
+    margin-right: 9px;     
+  }
+  .experienceDetailsContainers {
+    margin-bottom: 2.5px;
+    margin-left: 21px;  
+  }
+  .experienceDetails {
+    font-size: 12px;
+    margin-left: 9px;
+    line-height: 13px;
+  }
+  .skillsSubTitle {
+    font-size: 13.5px;
+    margin-left: 22px;
+    line-height: 15.2px;
+  }
+  .developmentDetails{
+    letter-spacing: -.3px;
+    font-size: 12.9px;  
+  }
+  .developmentDetailsAlt {
+    font-size: 12.7px; 
+    letter-spacing: -.85px; 
+  } 
+}
+
+@media (max-width: 770px) and (min-width: 600px) {
+  .buttonContainer{
+    width: 584px; 
+  }
+  .resumePaper {
+    width: 584px; 
+    height: 756px; 
+    padding: 22px 27px 20px 27px; 
+  }
+  .resumeLogo {
+    width: 71px; 
+    z-index: 2;
+    text-align: center;
+  }  
+  .resumeTitleContainer{
+    margin-left: 19px;
+  }
+  .resumeTitle{
+    font-size: 20.5px;
+    letter-spacing: 1.5px; 
+  }
+  .positionTitles{
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .resumeContactDetailsContainer{
+    margin-top: 2.5px;
+  }
+  .resumeContactMethod {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .resumeIcons {
+    height: 9px;
+    margin-left: 9px;
+    margin-top: 1.8px; 
+  }
+  .resumeExperience{
+    margin-top: 3.8px; 
+  }
+  .experienceTitle{
+    margin-left: 7px; 
+    font-size: 11.8px;
+    line-height: 13.5px;  
+    margin-bottom: 1px;
+    margin-top: 2.5px; 
+    color: #515151;
+  }
+  .experienceSubTitle {
+    font-size: 10.6px;
+    margin-left: 16px;
+    margin-top: 1px;
+  }
+  .triangle {
+    font-size: 8px;
+    margin-right: 8px;     
+  }
+  .experienceDetailsContainers {
+    margin-bottom: 2px;
+    margin-left: 16px;  
+  }
+  .experienceDetails {
+    font-size: 9.85px;
+    margin-left: 8px;
+    line-height: 10.5px;
+    letter-spacing: -.1px;
+  }
+  .skillsSubTitle {
+    font-size: 10.8px;
+    margin-left: 16px;
+    line-height: 11.7px;
+  }
+  .developmentDetails{
+    letter-spacing: -.3px;
+    font-size: 10.3px;  
+  }
+  .developmentDetailsAlt {
+    font-size: 10.2px; 
+    letter-spacing: -.81px; 
+  } 
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+  .buttonContainer{
+    width: 425px; 
+  }
+  .resumePaper {
+    width: 425px; 
+    height: 550px; 
+    padding: 15px 20px 15px 20px; 
+  }
+  .resumeLogo {
+    width: 52px; 
+    z-index: 2;
+    text-align: center;
+  }  
+  .resumeTitleContainer{
+    margin-left: 15px;
+  }
+  .resumeTitle{
+    font-size: 16px;
+    letter-spacing: 1.2px; 
+  }
+  .positionTitles{
+    font-size: 8px;
+    line-height: 10.82px;
+  }
+  .resumeContactDetailsContainer{
+    margin-top: 2px;
+  }
+  .resumeContactMethod {
+    font-size: 8.5px;
+    line-height: 10px;
+  }
+  .resumeIcons {
+    height: 8px;
+    margin-left: 8px;
+    margin-top: 1.4px; 
+  }
+  .resumeExperience{
+    margin-top: 3px; 
+  }
+  .experienceTitle{
+    margin-left: 5px; 
+    font-size: 9.5px;
+    line-height: 10px;  
+    margin-bottom: 1px;
+    margin-top: 1.1px; 
+    color: #515151;
+  }
+  .experienceSubTitle {
+    font-size: 8.3px;
+    margin-left: 10px;
+    margin-top: .5px;
+    letter-spacing: -.1px; 
+  }
+  .triangle {
+    font-size: 5.8px;
+    margin-right: 5.8px;     
+  }
+  .experienceDetailsContainers {
+    margin-bottom: 1px;
+    margin-left: 10px;  
+  }
+  .experienceDetails {
+    font-size: 7.3px;
+    margin-left: 5px;
+    line-height: 7.9px;
+    letter-spacing: -.095px;
+  }
+  .skillsSubTitle {
+    font-size: 8px;
+    margin-left: 10px;
+    line-height: 9px;
+  }
+  .developmentDetails{
+    letter-spacing: -.45px;
+    font-size: 8px;  
+  }
+  .developmentDetailsAlt {
+    font-size: 8px; 
+    letter-spacing: -.81px; 
+  } 
+}
+
+@media (max-width: 450px){
+  .buttonContainer{
+    width: 319px; 
+  }
+  .resumePaper {
+    width: 319px; 
+    height: 413px; 
+    padding: 8px 10px 8px 10px; 
+  }
+  .resumeLogo {
+    width: 39px; 
+    z-index: 2;
+    text-align: center;
+  }  
+  .resumeTitleContainer{
+    margin-left: 8px;
+  }
+  .resumeTitle{
+    font-size: 12px;
+    letter-spacing: .9px; 
+  }
+  .positionTitles{
+    font-size: 7px;
+    line-height: 10.4px;
+  }
+  .resumeContactDetailsContainer{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+  }
+  .resumeContactMethod {
+    font-size: 6.4px;
+    line-height: 7.5px; 
+  }
+  .resumeIcons {
+    height: 5px;
+    margin-left: 5px; 
+  }
+  .experienceTitle{
+    margin-left: 3px; 
+    font-size: 7.65px;
+    line-height: 7.8px;  
+    margin-bottom: .25px;
+    margin-top: .25px; 
+    color: #515151;
+  }
+  .experienceSubTitle {
+    font-size: 6.5px;
+    margin-left: 7px;
+    margin-top: .1px;
+    letter-spacing: -.15px; 
+  }
+  .triangle {
+    font-size: 5px;
+    margin-right: 5px;     
+  }
+  .experienceDetailsContainers {
+    margin-left: 7px;  
+  }
+  .experienceDetails {
+    font-size: 6.05px;
+    margin-left: 3px;
+    line-height: 6.1px;
+    letter-spacing: -.25px;
+  }
+  .skillsSubTitle {
+    font-size: 6.4px;
+    margin-left: 7px;
+    line-height: 6.7px;
+  }
+  .developmentDetails{
+    letter-spacing: -.6px;
+    font-size: 6.4px;  
+  }
+  .developmentDetailsAlt {
+    font-size: 6.4px; 
+    letter-spacing: -.85px; 
+  } 
 }
 
 /******************** Articles  *****************/
@@ -655,13 +954,14 @@ a {
 
 .codeLink a:hover {
   cursor: pointer;
-  color: #ff5050
+  color: #ff5050;
 }
 
 .githubIcon {
   margin-left: .25em;
-  width: .75em;
-  height: .75em;
+  width: .80em;
+  height: .80em;
+  color: #ff5050;
 }
 
 /******************* Contact *******************/

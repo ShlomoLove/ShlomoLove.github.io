@@ -16,7 +16,7 @@ const ResumeTop = () => {
 
       <div className='resumeTitleContainer'>
         <div className='resumeTitle'>
-          Scott P Nassau
+          SCOTT P NASSAU
         </div>
         <div className='positionTitles'>
           FULL-STACK SOFTWARE ENGINEER
