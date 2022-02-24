@@ -1,6 +1,6 @@
 import React from 'react';
 import HPDemo from '../../../../HPDanceParty-Demo.gif';
-import githubIcon from '../../../../githubIcon.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const HPDance = props => {
   return (
@@ -29,7 +29,7 @@ const HPDance = props => {
               JAVASCRIPT, JQUERY, JAVASCRIPT CLASSES
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/HarryPotterDanceParty'>view code<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/HarryPotterDanceParty'>view code<GitHubIcon className='githubIcon'></GitHubIcon></a>
           </div>
         </div>
 

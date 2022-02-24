@@ -1,5 +1,5 @@
 import React from 'react';
-import githubIcon from '../../../../githubIcon.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import TicTacToeReact from './TicTacToe/TTTApp';
 import TTTDemo from '../../../../TTTWS.gif'
 
@@ -34,7 +34,7 @@ const TicTacToe = props => {
               <button className='projectButton' onClick={()=>drawerClick('playTTT')}>PLAY GAME</button>
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/TicTacToeReact'>React and Vanilla JS Versions<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/TicTacToeReact'>React and Vanilla JS Versions<GitHubIcon className='githubIcon'></GitHubIcon></a>
           </div>
         </div>
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import ouiqlnDemo from '../../../../OuiQlnDemo.gif';
-import githubIcon from '../../../../githubIcon.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
-const OuiQln = props => {
+const OuiQln = () => {
   return (
     <div className='project'>
       <div className='projectContainer'>
@@ -32,7 +32,7 @@ const OuiQln = props => {
               JAVASCRIPT, REACT, CSS MODULES, AWS EC2, MONGODB, EXPRESS, AGILE, AWS EC2, NODE 
             </div>
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/OuiQln-Product-Details'>view code<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/OuiQln-Product-Details'>view code<GitHubIcon className='githubIcon'></GitHubIcon></a>
           </div>
         </div>
 

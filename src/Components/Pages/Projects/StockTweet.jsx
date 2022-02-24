@@ -1,6 +1,6 @@
 import React from 'react';
 import StockTweetDemo from '../../../../stock_twits.gif';
-import githubIcon from '../../../../githubIcon.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const StockTweet = () => {
   // const onButtonClick = () => {
@@ -36,7 +36,7 @@ const StockTweet = () => {
               <button className='projectButton' onClick={(()=> onButtonClick())}>VISIT SITE</button>
             </div> */}
             <div className='codeLink'>
-            <a href='https://github.com/ShlomoLove/stock-tweet'>view code<img src={githubIcon} className='githubIcon'></img></a>
+            <a href='https://github.com/ShlomoLove/stock-tweet'>view code<GitHubIcon className='githubIcon'></GitHubIcon></a>
           </div>
         </div>
         <div className='projectDemo'>
