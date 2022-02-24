@@ -34,9 +34,9 @@ const ZenSkate = () => {
             <div className='projectTechnologies'>
               JAVASCRIPT, REACT, AWS EC2, NGINX, MONGODB, EXPRESS, MAPBOX, STYLED-COMPONENTS, DOCKER, REACH ROUTER 
             </div>
-            <div className='projectButtonContainer'>
+            {/* <div className='projectButtonContainer'>
               <button className='projectButton' onClick={(()=> onButtonClick())}>VISIT SITE</button>
-            </div>
+            </div> */}
             <div className='codeLink'>
             <a href='https://github.com/skate-prototype-web'>view code<img src={githubIcon} className='githubIcon'></img></a>
           </div>

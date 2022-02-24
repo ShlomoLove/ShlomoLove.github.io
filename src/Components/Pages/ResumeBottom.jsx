@@ -7,6 +7,30 @@ const ResumeBottom = () => {
         <div className='experienceTitle'>
         PROFESSIONAL EXPERIENCE
         </div>
+        <div className='experienceSubTitle'>
+            SENIOR WEB DEVELOPER – M2CATALYST / 2020-PRESENT
+          </div>
+            <div className='experienceDetailsContainers'>
+              <div className='experienceDetails'>
+                <div className='triangle'>&#8226;</div>
+                <div>
+                  Developed automated unit and integration testing for node APIs using Mocha, Chai and Jest
+                </div>
+              </div>
+              <div className='experienceDetails'>
+                <div className='triangle'>&#8226;</div>
+                <div>
+                Led the development & launch of CrowdSiteIntel 2.0, a full-stack application, built with Vue.js, TypeScript, Node, SQL and Elasticsearch that provides global visualization on cell network performance for trillions of records of data 
+                </div>
+              </div>
+              <div className='experienceDetails'>
+                <div className='triangle'>&#8226;</div>
+                <div>
+                Spearheaded the refactoring of legacy code on the API to develop well-typed, organized, and scalable structure 
+                </div>
+              </div>
+            </div>
+
           <div className='experienceSubTitle'>
             FULL-STACK SOFTWARE ENGINEER – THE FRANK APP / 2020-PRESENT
           </div>
@@ -53,12 +77,6 @@ const ResumeBottom = () => {
               <div className='experienceDetails'>
                 <div className='triangle'>&#8226;</div>
                 <div>
-                  Employed single-page web design to develop a multi-page responsive web app with queries and NextJS routing
-                </div>
-              </div>
-              <div className='experienceDetails'>
-                <div className='triangle'>&#8226;</div>
-                <div>
                   Implemented agile practices by collaborating with UX Designers and Project Owners to adapt to changing scope
                 </div>
               </div>
@@ -76,12 +94,6 @@ const ResumeBottom = () => {
               </div>
               <div className='experienceDetails'>
                 <span className='triangle'>&#8226;</span>As a servant-leader, developed buy-in in a new organization by championing agile, self-organizing teams
-              </div>
-              <div className='experienceDetails'>
-                <span className='triangle'>&#8226;</span>Cultivated a robust environment by empowering the team and implementing healthy communication models
-              </div>
-              <div className='experienceDetails'>
-                <span className='triangle'>&#8226;</span>Coordinated cohesive teams by instilling mission, vision & values and facilitating conflict resolution techniques 
               </div>
             </div>
       </div>
@@ -107,9 +119,6 @@ const ResumeBottom = () => {
             <div className='experienceDetails'>
               <span className='triangle'>&#8226;</span>Deployed application onto an AWS EC2 instance using Docker, NGINX and redirected DNS to elastic IP address
             </div>
-            <div className='experienceDetails'>
-              <span className='triangle'>&#8226;</span>Incorporated Styled-Components with advanced use of props to dynamically style each component
-            </div>
           </div>
 
           <div className='experienceSubTitle'>
@@ -121,9 +130,6 @@ const ResumeBottom = () => {
               </div>
               <div className='experienceDetails'>
                 <span className='triangle'>&#8226;</span>Deployed application utilizing Docker and AWS with integration of Google OAuth to give user persistent access
-              </div>
-              <div className='experienceDetails'>
-                <span className='triangle'>&#8226;</span>Custom React Components for clear visualization of availability and real time updates to create & manage events 
               </div>
             </div>
           
